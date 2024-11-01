@@ -41,3 +41,5 @@ Em resumo, a compilação de dados é um processo crucial para transformar infor
 #### Repositório do projeto
 
 https://github.com/diogo-dantas/ETL-simplificado-CSV-JSON-e-XML-
+
+<a href="http://www.freepik.com">Designed by gstudioimagen / Freepik</a>

@@ -41,3 +41,5 @@ In short, data aggregation is a critical process for transforming scattered info
 #### Project repository
 
 https://github.com/diogo-dantas/ETL-simplificado-CSV-JSON-e-XML-
+
+<a href="http://www.freepik.com">Designed by gstudioimagen / Freepik</a>
