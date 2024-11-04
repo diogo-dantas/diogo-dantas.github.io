@@ -55,6 +55,15 @@ projects:
   summary: This project consists of an ETL system  to retrieve updated information on the market capitalization of the largest banks in the world through web scraping.
   tags: ["professional","python", "web scraping", "sqlite3","pandas"]
 
+- name:  InteligenciaDeDados_MapeamentoEAnalisesRelacionais 
+  logo: /images/sections/projects/python.png
+  role: Developer
+  timeline: "October 2024"
+  repo: https://github.com/diogo-dantas/InteligenciaDeDados_MapeamentoEAnalisesRelacionais
+  #url: ""
+  summary: This repository contains the structure of a relational database designed to support the activities of a bank's Data Intelligence (ID) department, focusing on analysis, governance and data quality. The system provides essential functionality such as data source management, flow monitoring, advanced analysis and results tracking.
+  tags: ["professional","python", "CI", "postgresql", "jupyter","pandas"]
+
   #name: Toha
   #logo: /images/sections/projects/toha.png
   #role: Owner

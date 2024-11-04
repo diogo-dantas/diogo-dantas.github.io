@@ -62,3 +62,20 @@ projects:
   #repo: https://github.com/hossainemruz/toha
   #summary: A Hugo theme for personal portfolio.
   #tags: ["hobby","hugo","theme","professional"]
+
+  - name:  InteligenciaDeDados_MapeamentoEAnalisesRelacionais 
+  logo: /images/sections/projects/python.png
+  role: Developer
+  timeline: "Outubro 2024"
+  repo: https://github.com/diogo-dantas/InteligenciaDeDados_MapeamentoEAnalisesRelacionais
+  #url: ""
+  summary: Este repositório contém a estrutura de um banco de dados relacional projetado para suportar as atividades do Departamento de Inteligência de Dados (ID) de um banco, com foco em análise, governança e qualidade de dados. O sistema oferece funcionalidades essenciais como gestão de origens de dados, monitoramento de fluxos, análises avançadas e rastreamento de resultados.
+  tags: ["professional","python", "CI", "postgresql", "jupyter","pandas"]
+
+  #name: Toha
+  #logo: /images/sections/projects/toha.png
+  #role: Owner
+  #timeline: "Jun 2019 - Present"
+  #repo: https://github.com/hossainemruz/toha
+  #summary: A Hugo theme for personal portfolio.
+  #tags: ["hobby","hugo","theme","professional"]
