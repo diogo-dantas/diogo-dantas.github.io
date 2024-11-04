@@ -39,13 +39,6 @@ projects:
   summary: Web scraping project using the Beautiful Soup and requests libraries to capture the 50 films with the best average ratings according to the EverybodyWiki website.
   tags: ["professional", "python","web scraping"]
 
-  #name: A sample academic paper
-  #role: Team Lead
-  #timeline: "Jan 2017 - Nov 2017"
-  #url: "https://www.example.com"
-  #summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  #tags: ["academic","iot"]
-
 - name:  MarketCapETLforTopBanks 
   logo: /images/sections/projects/python.png
   role: Developer
@@ -55,12 +48,11 @@ projects:
   summary: This project consists of an ETL system  to retrieve updated information on the market capitalization of the largest banks in the world through web scraping.
   tags: ["professional","python", "web scraping", "sqlite3","pandas"]
 
-- name:  InteligenciaDeDados_MapeamentoEAnalisesRelacionais 
+- name:  InteligenciaDeDados
   logo: /images/sections/projects/python.png
   role: Developer
   timeline: "October 2024"
   repo: https://github.com/diogo-dantas/InteligenciaDeDados_MapeamentoEAnalisesRelacionais
-  #url: ""
   summary: This repository contains the structure of a relational database designed to support the activities of a bank's Data Intelligence (ID) department, focusing on analysis, governance and data quality. The system provides essential functionality such as data source management, flow monitoring, advanced analysis and results tracking.
   tags: ["professional","python", "CI", "postgresql", "jupyter","pandas"]
 
