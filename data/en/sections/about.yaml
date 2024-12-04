@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Developer
+designation: 
 # your company information
 company:
   #name: Example Co.
@@ -19,9 +19,7 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: "With more than 11 years of experience in HR and finance, I developed solid skills in data analysis and analytical reporting, which were fundamental to optimizing processes and reducing costs.<br>
-This background inspired me to deepen my knowledge of data engineering through courses and hands-on projects that allowed me to explore advanced data manipulation and transformation techniques.<br>
-I'm excited about the opportunity to apply this expertise in a data engineering role, where I can help create efficient solutions and drive data-driven decision making.<br><br><br>"
+summary: <br>Transitioning Data Engineer with solid experience in financial and operational data analysis, specializing in creating solutions based on data analytics to optimize processes, measure KPIs and generate strategic insights. Experience in conducting studies to support decision making, including predictive modeling, data visualization, and management of financial and operational information. Skilled in using analytics and automation tools and working with multidisciplinary teams to optimize performance, reduce costs, and improve operational efficiency.<br><br><br><br>
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -44,9 +42,9 @@ socialLinks:
 
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
-#resourceLinks:
+resourceLinks:
 - title: "My resume"
-  url: "files/resume.pdf"
+  url: "files/my_resume.pdf"
 
 # Show your badges
 # You can show your verifiable certificates from https:/www.credly.com.
