@@ -1,7 +1,7 @@
 baseURL: https://diogo-dantas.github.io
 
 languageCode: en
-title: DiogoData
+title: "D  i  o  g  o   D  A  T  A"
 
 # Use Hugo modules to add theme
 module:
@@ -23,11 +23,11 @@ languages:
   pt-br:
     languageCode: pt-br
     languageName: PT-BR
-    title: "D i o g o D a t a"
+    title: "D  i  o  g  o    D  A  T  A"
   en:
     languageCode: en
     languageName: EN
-    title: "D i o g o D a t a"
+    title: "D  i  o  g  o    D  A  T  A"
 # default language for the content
 defaultContentLanguage: en
 
@@ -60,10 +60,10 @@ params:
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
-  logo:
-    main: /images/site/favicon2.png
-    inverted: /images/site/inverted-logo2.png
-    favicon: /images/site/favicon2.png
+  #logo:
+   # main: /images/site/favicon2.png
+   # inverted: /images/site/inverted-logo2.png
+   # favicon: /images/site/favicon2.png
 
   # GitHub repo of your site
   gitRepo: https://github.com/diogo-dantas/diogo-dantas.github.io

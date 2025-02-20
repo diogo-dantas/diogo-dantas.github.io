@@ -19,7 +19,7 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: <br>Transitioning Developer with solid experience in financial and operational data analysis, specializing in creating solutions based on data analytics to optimize processes, measure KPIs and generate strategic insights. Experience in conducting studies to support decision making, including predictive modeling, data visualization, and management of financial and operational information. Skilled in using analytics and automation tools and working with multidisciplinary teams to optimize performance, reduce costs, and improve operational efficiency.<br><br><br><br>
+summary: <br>Developer in transition, with solid experience in financial and operational data analysis, specialized in creating solutions for optimizing processes, measuring KPIs and generating strategic insights. Experience in conducting studies to support decision-making, including modeling, data visualization and management of financial and operational information.<br><br><br><br>
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -35,6 +35,10 @@ socialLinks:
 - name: LinkedIn
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/diogodantasp"
+
+- name: Hackerrank
+  icon: "fab fa-hackerrank"
+  url: "https://www.hackerrank.com/diogo_dantas2088"
 
   #name: Medium
   #icon: "fab fa-medium"
@@ -66,20 +70,49 @@ badges:
   #badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
 
 - type: soft-skill-indicator
-  name: Team work
+  name: Team Work
   percentage: 95
-  color: blue
+  color: "#5A71B5"
+
+#- type: soft-skill-indicator
+  #name: Leadership
+  #percentage: 65
+  #color: "#858DA6"
 
 - type: soft-skill-indicator
-  name: Discipline
-  percentage: 95
-  color: yellow
+  name: Logical Reasoning
+  percentage: 80
+  color: "#7997F2"
 
 - type: soft-skill-indicator
-  name: Logical Thinking
-  percentage: 95
-  color: orange
+  name: Analytical Thinking
+  percentage: 85
+  color: "#5C6273"
 
+- type: soft-skill-indicator
+  name: Adaptability
+  percentage: 95
+  color: "#7997F2"
+
+- type: soft-skill-indicator
+  name: Troubleshooting
+  percentage: 80
+  color: "#5C6273"
+
+#- type: soft-skill-indicator
+  #name: Emotional Intelligence	
+  #percentage: 75
+  #color: "#5A71B5"
+
+- type: soft-skill-indicator
+  name: Time Management
+  percentage: 95
+  color: "#858DA6"
+
+#- type: soft-skill-indicator
+  #name: Effective communication
+  #percentage: 85
+  #color: "#7997F2"
 # you can also provide color code instead of the color name
 # - type: soft-skill-indicator
 #   name: Example 1
