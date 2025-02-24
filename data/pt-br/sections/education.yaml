@@ -17,6 +17,10 @@ degrees:
     name: Univesp - Univesidade Virtual do Estado de São Paulo
     url: "https://univesp.br/"
     logo: /images/sections/education/Univesp.png
+  takenCourses: 
+    courses:
+    - name: "Estatística, Geometria Analítica e Álgebra Linear, Lógica e Matemática Discreta, Disciplinas de Cálculo, Física, Geral, entre outros."
+
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/tech_college.png
   #grade: #(optional)
@@ -33,42 +37,10 @@ degrees:
     name: Unip - Universidade Paulista
     url: "https://unip.br/"
     logo: /images/sections/education/unip.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/university.jpg
-  #grade: #(optional)
-    scale: CGPA
-    achieved: 3.5
-    outOf: 4
-  #takenCourses: #(optional)
-    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: true
-    collapseAfter: 3
+  takenCourses: 
     courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: Artificial Intelligent
-      achieved: 3.75
-      outOf: 4
-  #publications: #(optional)
-  #- title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  # url: "#"
-  #extracurricularActivities: #(optional)
-  #- In vitae facilisis est, eget porta sem.
-  #- Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  #- Duis sed massa feugiat, ornare justo et, aliquam est.
-  #- Pellentesque ut fringilla magna.
-  #custonSections: #(optional)
-    - name: Thesis
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - name: Supervisor
-      content: Fusce eu augue ut odio porttitor pulvinar.
+    - name: "Algoritmos e Estrutura de Dados, Cloud Computing e Devops, Desenvolvimento Móvel, Engenharia de Software Ágil Aplicada, Análise de Sistemas Orientados a Objetos, Programação de Bases de Dados, Matemática e Estatística, Modelagem de Bancos de Dados NOSQL, entre outros."
+
 - name: Especialização Lato Sensu - Ciência de Dados
   icon: fa-university
   timeframe: 2020-2021
@@ -78,6 +50,9 @@ degrees:
     logo: /images/sections/education/mackenzie.png
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/science_college.png
+  takenCourses: 
+    courses:
+    - name: "Arquitetura de Big Data, Coleta e Armazenamento de Dados, Processamento em Big Data, Análise Estatística, Visualização de Dados, Mineração e Análises de Dados."
 
 - name: Bacharelado em Ciências Contábeis
   icon: fa-graduation-cap
@@ -88,5 +63,5 @@ degrees:
     logo: /images/sections/education/anhanguera.png
   takenCourses: 
     courses:
-    - name: Incompleto, realizado até o terceiro ano.
+    - name: "Análise de custo, Matemática Financeira, Planejamento Financeiro e Orçamentário, Contabilidade de Custos e Industrial, Contabilidade Fiscal e Planejamento Tributário, Capital de Giro e Análise Financeira, entre outros. Matrícula trancada no 3° ano."
     

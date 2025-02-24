@@ -1,3 +1,3 @@
 ---
-title: Postagens
+title: Posts
 ---

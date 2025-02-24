@@ -13,8 +13,8 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Basic
-  filter: "basic"
+- name: Tools
+  filter: "tools"
 - name: Language
   filter: "language"
   #name: Container
@@ -25,27 +25,10 @@ buttons:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-  #name: Cloud Computing
-  #logo: /images/sections/skills/cloud.png
-  #summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  #categories: ["others"]
-
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
-
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
-  url: "https://git-scm.com/"
-
 - name: SQL
   logo: /images/sections/skills/SQL.png
-  summary: "Basic and advanced queries (*CTEs, Windows functions, subqueries, nested and correlated queries*).<br> Data manipulation, schema definition and manipulation.<br>
-  Databases: PostgreSQL, MySQL, SQL Server, Db2, sqlite, NoSQL (MongoDB)"
-  categories: ["basic", "language"]
+  summary: "Basic and advanced queries (*CTEs, Windows Functions, Subqueries, nested and correlated queries*).<br> Data manipulation, schema definition and manipulation.<br>"
+  categories: ["all", "language"]
   #url: "https://kubernetes.io/"
 
   #name: Go Development
@@ -59,20 +42,25 @@ skills:
   #summary: "GCP, AWS, Azure."
   #categories: ["others"]
 
-- name: Java
-  logo: /images/sections/skills/java.png
-  summary: "OOD, SOLID, Servlet, Design Patterns, TDD, Maven.<br> Frameworks: Spring, JUnit "
-  categories: ["basic", "language"]
-  url: "https://docs.oracle.com/en/java/"
-
 - name: Python
   logo: /images/sections/skills/python.png
   summary: "Pandas, Numpy, Matplotlib, BeautifulSoup, requests, Jupyter <br>Frameworks: Django, Scrapy, pytest"
-  categories: ["basic", "language"]
+  categories: ["all", "language"]
   url: "https://docs.python.org/3/"
 
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Experience with git-based development. Mainly Github."
+  categories: ["all", "tools"]
+  url: "https://git-scm.com/"
 
-  #name: C++
-  #logo: /images/sections/skills/c++.png
-  #summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  #categories: ["basic", "language"]
+- name: Office
+  logo: "/images/sections/skills/office.png"
+  summary: "Advanced Excel skills, with expertise in matrix formulas and data analysis. Creating PowerPoint presentations, with dynamic and customized views, among other features of the package."
+  categories: ["all", "tools"]
+  url: "https://www.microsoft.com/pt-br/microsoft-365/products-apps-services"
+
+- name: Power BI
+  logo: "/images/sections/skills/power-bi.png" 
+  summary: "Creation of interactive reports and dashboards, ETL in Power Query, data modeling."
+  categories: ["all", "tools"]

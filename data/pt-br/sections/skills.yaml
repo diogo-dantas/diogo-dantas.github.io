@@ -11,25 +11,24 @@ section:
 
 # filter buttons
 buttons:
-- name: All
-  filter: "all"
-- name: Basic
-  filter: "basic"
-- name: Language
-  filter: "language"
+- name: Todos
+  filter: "todos"
+- name: Ferramentas
+  filter: "ferramentas"
+- name: Linguagens
+  filter: "linguagens"
   #name: Container
   #filter: "container"
-- name: Others
-  filter: "others"
+- name: Outros  
+  filter: "outros"
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
 - name: SQL
   logo: /images/sections/skills/SQL.png
-  summary: "Consultas Básicas e Avançadas (*CTEs, Windows Functions, Subqueries, Queries aninhadas e correlacionadas*).<br> Manipulação de dados, definição e manipulação de esquemas.<br>
-  Bancos de dados: PostgreSQL, MySQL, SQL Server, Db2, sqlite, NoSQL (MongoDB)"
-  categories: ["basic", "language"]
+  summary: "Consultas Básicas e Avançadas (*CTEs, Windows Functions, Subqueries, Queries aninhadas e correlacionadas*).<br> Manipulação de dados, definição e manipulação de esquemas.<br>"
+  categories: ["todos", "linguagens"]
   #url: "https://kubernetes.io/"
 
   #name: Go Development
@@ -43,29 +42,30 @@ skills:
   #summary: "GCP, AWS, Azure."
   #categories: ["others"]
 
-- name: Java
-  logo: /images/sections/skills/java.png
-  summary: "POO, princípios SOLID, Servlet, Design Patterns, TDD, Maven.<br> Frameworks: Spring, JUnit "
-  categories: ["basic", "language"]
-  url: "https://docs.oracle.com/en/java/"
-
 - name: Python
   logo: /images/sections/skills/python.png
   summary: "Pandas, Numpy, Matplotlib, BeautifulSoup, requests, Jupyter <br>Frameworks: Django, Scrapy, pytest"
-  categories: ["basic", "language"]
+  categories: ["todos", "linguagens"]
   url: "https://docs.python.org/3/"
-
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Usando como sistema operacional principal. Capaz de escrever scripts bash/shell."
-  categories: ["others"]
 
 - name: Git
   logo: /images/sections/skills/git.png
   summary: "Experiência com desenvolvimento baseado em git. Principalmente, o Github."
-  categories: ["basic"]
+  categories: ["todos", "ferramentas"]
   url: "https://git-scm.com/"
 
+- name: Office
+  logo: "/images/sections/skills/office.png"
+  summary: "Destaque para habilidade avançada em Excel, com expertise em fórmulas matriciais e análise de dados. Criação de apresentações em PowerPoint, com visualizações dinâmicas e personalizadas entre outros recursos do pacote."
+  categories: ["todos", "ferramentas"]
+  url: "https://www.microsoft.com/pt-br/microsoft-365/products-apps-services"
+
+- name: Power BI
+  logo: "/images/sections/skills/power-bi.png" 
+  summary: "Criação de relatórios e dashboards interativos, ETL em Power Query, Modelagem dos dados."
+  categories: ["todos", "ferramentas"]
+
+  
   #name: C++
   #logo: /images/sections/skills/c++.png
   #summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
