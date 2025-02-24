@@ -2,7 +2,7 @@
 title: Top Category Sample
 menu:
   sidebar:
-    name: Desenvolvimento
-    identifier: development
+    name: Task Automation
+    identifier: task-automation
     weight: 20
 ---

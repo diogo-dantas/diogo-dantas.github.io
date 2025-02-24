@@ -2,7 +2,7 @@
 title: Top Category Sample
 menu:
   sidebar:
-    name: Data Engineer
-    identifier: data-engineer
+    name: ETL
+    identifier: etl
     weight: 20
 ---

@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Postagens recentes
+  name: Projetos recentes
   id: recent-posts
   enable: true
   weight: 8

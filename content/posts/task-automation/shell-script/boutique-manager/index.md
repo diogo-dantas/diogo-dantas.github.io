@@ -7,11 +7,11 @@ theme: Toha
 menu:
   sidebar:
     name: 'Intelligent management: Shell Script integration and task automation'
-    identifier: development-shell-script-cron
+    identifier: task-automation-shell-script-cron
     weight: 500
-    parent: development-shell-script
+    parent: task-automation-shell-script
 categories: 
-- Development
+- task-automation
 tags: ["Cron", "Shell Script", "Bash (Unix Shell)"]
 ---
 

@@ -2,7 +2,7 @@
 title: Top Category Sample
 menu:
   sidebar:
-    name: Development
-    identifier: development
+    name: ETL
+    identifier: etl
     weight: 20
 ---

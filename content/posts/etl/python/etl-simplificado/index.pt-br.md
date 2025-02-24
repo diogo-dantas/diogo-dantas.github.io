@@ -7,9 +7,9 @@ theme: Toha
 menu:
   sidebar:
     name: Dados Compilados
-    identifier: data-engineer-py-etl-simp
+    identifier: etl-py-etlsimp
     weight: 500
-    parent: data-engineer-py
+    parent: etl-py
 categories: 
 - Engenharia de Dados
 tags: ["ETL", "Python"]
