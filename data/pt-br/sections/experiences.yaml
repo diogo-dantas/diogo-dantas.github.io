@@ -18,23 +18,26 @@ experiences:
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/experiences/company1.jpg
     # company overview
-    overview: Prestador de serviços residente na empresa Volkswagen. 
+    overview: Prestador de serviços residente na empresa Volkswagen do Brasil (Planta Anchieta). 
   positions:
-  - designation: Controlador
+  - designation: Controlador de Transporte e Alimentação
     start: Jul 2013
     end: Ago 2024
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Análise e Consolidação de Dados. Coleta, organização e análise de dados financeiros, operacionais e de processos.
-    - Desenvolvimento de Relatórios e Dashboards. Criação de relatórios gerenciais e dashboards interativos para fornecer uma visão clara e objetiva sobre os resultados das contas no mês e projeção ano.
-    - Suporte em atividades de reclassificação e conciliação financeira mensal, contribuindo para relatórios financeiros e modelagem preditiva de forecast e orçamento.
-    - Acompanhamento e análise crítica de real vs. orçado, provendo insights para ajustes estratégicos e sustentação financeira.
-    - Condução de estudos e mensuração de KPIs de contratos com uso de analytics, visando gerar dados acionáveis para decisões que aprimorem a performance e gerem saving.
-    - Criação de relatórios detalhados e apresentações para a alta gerência, com foco em dashboards de KPIs, visualizações de dados e recomendações baseadas em insights.
-    - Colaboração interdepartamental para garantir a eficiência dos processos administrativos e financeiros, usando ferramentas de data analysis e process optimization.
-     <br><br><b>Sistemas utilizados:</b> SAP - módulos HR e FI, Sistema de compras gerais SAP (KSRM), Senior (SQL),  pacote Office e Power BI.
+      - Realizei o acompanhamento dos processos diários e atuei de forma imediata nos eventuais erros a fim de garantir a disponibilidade dos dashboards.
+      - Participei em iniciativas de melhorias e ajustes no Power BI.
+      - Realizei análises e relatórios gerenciais utilizando Excel avançado e Power BI para apresentação de dados e indicadores.
+      - Identifiquei oportunidades de melhoria em processos e auxiliei na redução de custos da empresa.
+      - Coletei e estruturei dados de múltiplas fontes, como bancos de dados, APIs e relatórios, garantindo a integridade das informações.
+      - Analisei e interpretei dados para detectar padrões, correlações e inconsistências.
+      - Elaborei e revisei documentos, relatórios e apresentações para a alta gestão.
+      - Responsável pelo acompanhamento do ciclo de contas a pagar das contas de Transporte de Pessoas e Alimentação, com foco na precisão e pontualidade nos processos financeiros, utilizando práticas de gestão de dados para garantir a integridade das informações;
+      - Atualização e gestão de bases de dados via SQL para acompanhamento de cobranças de funcionários e terceirizados, garantindo a precisão dos lançamentos e relatórios;
+      - Utilização de ferramentas avançadas do pacote Office (especialmente Excel, PowerPoint), Power BI (DAX, Power Query), módulos SAP HR e FI, Senior (SQL) e K-SRM (sistema geral de compras ABAP)
+      - Colaborei com equipes multifuncionais para atender às demandas administrativas e operacionais.
 - company:
     name: Alditel Gestão Econômica em Telecomunicações 
     url: "https://www.aitivus.com.br/"
@@ -48,8 +51,10 @@ experiences:
     start: Jun 2011
     end: Jun 2013
     responsibilities:
-    - Alocação de custo, gestão de ativos de telecom e elaboração de relatórios gerenciais.  
-    - Atividades de contas a pagar e suporte presencial e telefônica para equipe.
+      - Auxiliava no levantamento de informações junto aos usuários para o desenvolvimento de sistemas de telecom.
+      - Auxiliava na implantação e manutenção de sistemas, como ponto focal de clientes. Preparando testes, analisando problemas técnicos e propondo soluções.
+      - Efetuei o input de custos e a gestão dos ativos de telecom, assegurando a otimização dos recursos e o controle eficiente dos investimentos.
+      - Preparei relatórios de gestão detalhados e dashboards para fornecer insights acionáveis à liderança e apoiar a tomada de decisões estratégicas.
 
 - company:
     name: Banco do Brasil
@@ -64,5 +69,5 @@ experiences:
     start: Fev 2010
     end: Dez 2010
     responsibilities:
-    - Elaboração de cálculos estatísticos cálculo de faturas, identificação de lotes de documentos, suporte a clientes, suporte telefônico para agências e elaboração de tabelas de controle.
-    - Logística para atendimento e manutenção de caixas eletrônicos.
+      - Elaboração de cálculos estatísticos cálculo de faturas, identificação de lotes de documentos, suporte a clientes, suporte telefônico para agências e elaboração de tabelas de controle.
+      - Logística para atendimento e manutenção de caixas eletrônicos.

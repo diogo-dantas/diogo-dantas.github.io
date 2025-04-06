@@ -175,8 +175,8 @@ params:
         kofi:
           user: hossainemruz
           text: Tip Me
-          textColor: '#f9fafc'
-          backgroundColor: '#248aaa'
+          textColor: '#00c896'
+          backgroundColor: '#525252'
         # buymeacoffee:
         #   user: <your buymeacoffee.com user>
         #   text: Support me on Buy me a coffee!

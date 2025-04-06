@@ -27,15 +27,17 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Data analysis and consolidation. Collect, organize and analyze financial, operational and process data.
-    - Report and Dashboard Development. Creation of management reports and interactive dashboards to provide a clear and objective view of account results on a monthly and yearly projection.
-    - Support reclassification activities and monthly financial reconciliations, contributing to financial reports and predictive modeling of forecasts and budgets.
-    - Monitor and critically analyze current vs. budget, providing insight for strategic adjustments and financial support.
-    - Conduct studies and measure contract KPIs using analytics to generate actionable data for decisions that improve performance and generate savings.
-    - Produce detailed reports and presentations for senior management, focusing on KPI dashboards, data visualizations, and insight-based recommendations.
-    - Collaborate across departments to ensure the efficiency of administrative and financial processes using data analytics and process optimization tools.
-     <br><br><b>Systems in use:</b> SAP - HR and FI modules, SAP general purchasing system (KSRM), Senior (SQL), Office package and Power BI.
-
+    - I monitored daily processes and acted immediately on any errors to ensure the availability of the dashboards.
+    - Participated in improvement initiatives and adjustments to Power BI.
+    - I carried out analysis and management reports using advanced Excel and Power BI to present data and indicators.
+    - I identified opportunities to improve processes and helped reduce company costs.
+    - Collected and structured data from multiple sources, such as databases, APIs and reports, ensuring the integrity of the information.
+    - Analyzed and interpreted data to detect patterns, correlations and inconsistencies.
+    - Prepared and revised documents, reports and presentations for senior management.
+    - Responsible for monitoring the accounts payable cycle for People Transportation and Food accounts, with a focus on accuracy and punctuality in financial processes, using data management practices to ensure the integrity of information;
+    - Updating and managing databases via SQL to monitor charges from employees and contractors, ensuring the accuracy of entries and reports;
+    - Use of advanced Office suite tools (especially Excel, PowerPoint), Power BI (DAX, Power Query), SAP HR and FI modules, Senior (SQL) and K-SRM (general ABAP purchasing system)
+    - Collaborated with cross-functional teams to meet administrative and operational demands.
 
 - company:
     name: Alditel Gestão Econômica em Telecomunicações 
@@ -50,8 +52,10 @@ experiences:
     start: Jun 2011
     end: Jun 2013
     responsibilities:
-    - Cost allocation, telecom asset management and management reporting.  
-    - Accounts payable activities and providing face-to-face and telephone support to the team.
+    - Assisted in gathering information from users for the development of telecom systems.
+    - Assisted in the implementation and maintenance of systems, as a focal point for clients. Preparing tests, analyzing technical problems and proposing solutions.
+    - I input costs and managed telecom assets, ensuring the optimization of resources and efficient control of investments.
+    - I prepared detailed management reports and dashboards to provide actionable insights to leadership and support strategic decision-making.
 
 - company:
     name: Banco do Brasil

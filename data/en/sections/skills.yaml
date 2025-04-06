@@ -62,5 +62,5 @@ skills:
 
 - name: Power BI
   logo: "/images/sections/skills/power-bi.png" 
-  summary: "Creation of interactive reports and dashboards, ETL in Power Query, data modeling."
+  summary: "Creation of interactive reports and dashboards, ETL in Power Query, data modeling, DAX."
   categories: ["all", "tools"]
