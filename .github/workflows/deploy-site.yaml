@@ -20,7 +20,7 @@ jobs:
         extended: true
 
     - name: Update Hugo Modules
-      run: hugo mod tidy
+      run: hugo mod get -u
 
     - name: Setup Node
       uses: actions/setup-node@v4
