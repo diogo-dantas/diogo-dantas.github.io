@@ -1,12 +1,5 @@
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
-default:
-  before_script:
-    - apk add --update --no-cache git go nodejs npm
-    - hugo mod tidy
-    - hugo mod npm pack
-    - npm install 
-
 test:
   script:
     - hugo
