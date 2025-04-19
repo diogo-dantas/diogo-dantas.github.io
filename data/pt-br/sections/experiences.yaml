@@ -27,17 +27,14 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-      - Realizei o acompanhamento dos processos diários e atuei de forma imediata nos eventuais erros a fim de garantir a disponibilidade dos dashboards.
-      - Participei em iniciativas de melhorias e ajustes no Power BI.
-      - Realizei análises e relatórios gerenciais utilizando Excel avançado e Power BI para apresentação de dados e indicadores.
-      - Identifiquei oportunidades de melhoria em processos e auxiliei na redução de custos da empresa.
-      - Coletei e estruturei dados de múltiplas fontes, como bancos de dados, APIs e relatórios, garantindo a integridade das informações.
-      - Analisei e interpretei dados para detectar padrões, correlações e inconsistências.
-      - Elaborei e revisei documentos, relatórios e apresentações para a alta gestão.
-      - Responsável pelo acompanhamento do ciclo de contas a pagar das contas de Transporte de Pessoas e Alimentação, com foco na precisão e pontualidade nos processos financeiros, utilizando práticas de gestão de dados para garantir a integridade das informações;
-      - Atualização e gestão de bases de dados via SQL para acompanhamento de cobranças de funcionários e terceirizados, garantindo a precisão dos lançamentos e relatórios;
-      - Utilização de ferramentas avançadas do pacote Office (especialmente Excel, PowerPoint), Power BI (DAX, Power Query), módulos SAP HR e FI, Senior (SQL) e K-SRM (sistema geral de compras ABAP)
-      - Colaborei com equipes multifuncionais para atender às demandas administrativas e operacionais.
+      -  Estruturei bases de dados desestruturados para análises financeiras, com consultas SQL (para limpeza e cruzamento de dados) e extrações via SAP HANA Web IDE , garantindo precisão e insights estratégicos.
+      -  Automatizei a extração e cruzamento de dados de empregados/prestadores via SQL, identificando oportunidades de redução de custos em transporte fretado. Utilizei consultas entre tabelas para propor realocação de turnos, resultando em 30% menos viagens/dia.
+      -  Analisei criticamente dados de ocupação de veículos, relacionando informações de rotas, turnos e custos para sugerir otimizações alinhadas com o operacional.
+      -  Documentei e apresentei propostas de economia através de relatórios, Business Cases em Excel e apresentações em PowerPoint, garantindo adesão da equipe operacional.
+      -  Extração de dados de acesso a restaurantes e volume de refeições via SQL (Interface Gráfica do Usuário), criando scripts para consolidar KPIs de ocupação e custos, o que permitiu a redução de 2 restaurantes.
+      -  Analisei criticamente dados de fluxo de empregados x informações dos cardápios, identificando volumes e apresentando dados ao setor de Compras para renegociação de incidências e economia com contrato.
+      -  "Desenvolvi dashboards em Excel e Power Bi para monitorar custos fixos e variáveis de alimentação e transporte, com alertas para desvios (ex: resto ingesta acima de 2%), gerando precisão no planejamento e economia anual do budget."
+
 - company:
     name: Alditel Gestão Econômica em Telecomunicações 
     url: "https://www.aitivus.com.br/"

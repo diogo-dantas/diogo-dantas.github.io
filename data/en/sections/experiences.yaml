@@ -27,17 +27,13 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - I monitored daily processes and acted immediately on any errors to ensure the availability of the dashboards.
-    - Participated in improvement initiatives and adjustments to Power BI.
-    - I carried out analysis and management reports using advanced Excel and Power BI to present data and indicators.
-    - I identified opportunities to improve processes and helped reduce company costs.
-    - Collected and structured data from multiple sources, such as databases, APIs and reports, ensuring the integrity of the information.
-    - Analyzed and interpreted data to detect patterns, correlations and inconsistencies.
-    - Prepared and revised documents, reports and presentations for senior management.
-    - Responsible for monitoring the accounts payable cycle for People Transportation and Food accounts, with a focus on accuracy and punctuality in financial processes, using data management practices to ensure the integrity of information;
-    - Updating and managing databases via SQL to monitor charges from employees and contractors, ensuring the accuracy of entries and reports;
-    - Use of advanced Office suite tools (especially Excel, PowerPoint), Power BI (DAX, Power Query), SAP HR and FI modules, Senior (SQL) and K-SRM (general ABAP purchasing system)
-    - Collaborated with cross-functional teams to meet administrative and operational demands.
+    - I structured unstructured databases for financial analysis, with SQL queries (for data cleaning and cross-referencing) and extractions via SAP HANA Web IDE, ensuring accuracy and strategic insights.
+    - I automated the extraction and cross-referencing of employee/employee data via SQL, identifying opportunities to reduce charter transport costs. I used queries between tables to propose reallocation of shifts, resulting in 30% fewer trips/day.
+    - I critically analyzed vehicle occupancy data, relating information on routes, shifts and costs to suggest optimizations in line with operations.
+    - I documented and presented savings proposals through reports, Business Cases in Excel and PowerPoint presentations, ensuring buy-in from the operational team.
+    - Extracted restaurant access and meal volume data via SQL (Graphical User Interface), creating scripts to consolidate occupancy and cost KPIs, which enabled the reduction of 2 restaurants.
+    - I developed dashboards in Excel and Power Bi to monitor fixed/variable food and transportation costs, with alerts for deviations (e.g. rest of intake above 2%), generating precision in planning and annual budget savings.
+    - I critically analyzed employee flow data x menu information, identifying volumes and presenting data to the Purchasing sector to renegotiate incidents and contract savings.
 
 - company:
     name: Alditel Gestão Econômica em Telecomunicações 
