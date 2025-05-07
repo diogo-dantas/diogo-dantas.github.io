@@ -44,7 +44,7 @@ skills:
 
 - name: Python
   logo: /images/sections/skills/python.png
-  summary: "Pandas, Numpy, Matplotlib, BeautifulSoup, requests, Jupyter <br>Frameworks: Django, Scrapy, pytest"
+  summary: "Pandas, Numpy, Matplotlib, Seaborn, BeautifulSoup, requests, Jupyter <br>Frameworks: Django, Scrapy, pytest"
   categories: ["todos", "linguagens"]
   url: "https://docs.python.org/3/"
 

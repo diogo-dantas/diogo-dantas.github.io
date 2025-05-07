@@ -27,13 +27,15 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-      -  Estruturei bases de dados desestruturados para análises financeiras, com consultas SQL (para limpeza e cruzamento de dados) e extrações via SAP HANA Web IDE , garantindo precisão e insights estratégicos.
-      -  Automatizei a extração e cruzamento de dados de empregados/prestadores via SQL, identificando oportunidades de redução de custos em transporte fretado. Utilizei consultas entre tabelas para propor realocação de turnos, resultando em 30% menos viagens/dia.
-      -  Analisei criticamente dados de ocupação de veículos, relacionando informações de rotas, turnos e custos para sugerir otimizações alinhadas com o operacional.
-      -  Documentei e apresentei propostas de economia através de relatórios, Business Cases em Excel e apresentações em PowerPoint, garantindo adesão da equipe operacional.
-      -  Extração de dados de acesso a restaurantes e volume de refeições via SQL (Interface Gráfica do Usuário), criando scripts para consolidar KPIs de ocupação e custos, o que permitiu a redução de 2 restaurantes.
-      -  Analisei criticamente dados de fluxo de empregados x informações dos cardápios, identificando volumes e apresentando dados ao setor de Compras para renegociação de incidências e economia com contrato.
-      -  "Desenvolvi dashboards em Excel e Power Bi para monitorar custos fixos e variáveis de alimentação e transporte, com alertas para desvios (ex: resto ingesta acima de 2%), gerando precisão no planejamento e economia anual do budget."
+      - Estruturei bases de dados desestruturados para análises financeiras, com consultas SQL (para limpeza e cruzamento de dados) e extrações via SAP HANA IDE , garantindo precisão e insights estratégicos.
+      - Realizei análises exploratórias utilizando Pandas, Matplotlib e Seaborn em ambiente Jupyter, validando integridade de dados operacionais (dados de empregados, refeições) com foco em consistência, detecção de outliers e padrões ocultos, gerando visualizações interativas e relatórios interpretáveis para identificar oportunidades de otimização de custo/operacional. 
+      - Analisei criticamente dados de ocupação de veículos, relacionando informações de rotas, turnos e custos para sugerir otimizações alinhadas com o operacional. Utilizei consultas entre tabelas para propor realocação de empregados entre turnos, resultando em 30% menos viagens/dia.
+      - Documentei e apresentei propostas de economia através de relatórios, Business Cases em Excel e apresentações em PowerPoint, garantindo adesão da equipe operacional.
+      - Extração de dados de acesso a restaurantes e volume de refeições via SQL (Interface Gráfica do Usuário), criando scripts para consolidar KPIs de ocupação e custos, o que permitiu a redução de 2 restaurantes.
+      - Desenvolvi dashboards em Excel e Power Bi para monitorar custos fixos/variáveis de alimentação e transporte, com alertas para desvios, gerando precisão no planejamento e economia anual do budget.
+      - Analisei criticamente dados de fluxo de empregados x informações dos cardápios, identificando volumes e apresentando dados ao setor de Compras para renegociação de incidências e economia com contrato.
+      - Colaborei com equipes multifuncionais para atender às demandas administrativas e operacionais.
+      - Utilização de ferramentas avançadas do pacote Office, Power BI (DAX, Power Query), SAP, Senior e K-SRM (sistema geral de compras ABAP).
 
 - company:
     name: Alditel Gestão Econômica em Telecomunicações 

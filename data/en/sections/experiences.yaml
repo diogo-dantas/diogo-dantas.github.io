@@ -27,14 +27,16 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - I structured unstructured databases for financial analysis, with SQL queries (for data cleaning and cross-referencing) and extractions via SAP HANA Web IDE, ensuring accuracy and strategic insights.
-    - I automated the extraction and cross-referencing of employee/employee data via SQL, identifying opportunities to reduce charter transport costs. I used queries between tables to propose reallocation of shifts, resulting in 30% fewer trips/day.
-    - I critically analyzed vehicle occupancy data, relating information on routes, shifts and costs to suggest optimizations in line with operations.
-    - I documented and presented savings proposals through reports, Business Cases in Excel and PowerPoint presentations, ensuring buy-in from the operational team.
+    - I structured unstructured databases for financial analysis, with SQL queries (for data cleaning and cross-checking) and extractions via SAP HANA IDE, ensuring accuracy and strategic insights.
+    - Performed exploratory analysis using Pandas, Matplotlib and Seaborn in a Jupyter environment, validating operational data integrity (employee data, meals) with a focus on consistency, detection of outliers and hidden patterns, generating interactive visualizations and interpretable reports to identify cost/operational optimization opportunities. 
+    - I critically analyzed vehicle occupancy data, linking route, shift and cost information to suggest optimizations in line with operations. I used table queries to propose reallocating employees between shifts, resulting in 30% fewer trips/day.
+    - Documented and presented savings proposals through reports, Business Cases in Excel and PowerPoint presentations, ensuring buy-in from the operational team.
     - Extracted restaurant access and meal volume data via SQL (Graphical User Interface), creating scripts to consolidate occupancy and cost KPIs, which enabled the reduction of 2 restaurants.
-    - I developed dashboards in Excel and Power Bi to monitor fixed/variable food and transportation costs, with alerts for deviations (e.g. rest of intake above 2%), generating precision in planning and annual budget savings.
-    - I critically analyzed employee flow data x menu information, identifying volumes and presenting data to the Purchasing sector to renegotiate incidents and contract savings.
-
+    - I developed dashboards in Excel and Power Bi to monitor fixed/variable food and transportation costs, with alerts for deviations, generating precision in planning and annual budget savings.
+    -  I critically analyzed employee flow data x menu information, identifying volumes and presenting data to the Purchasing sector to renegotiate incidences and save on contracts.
+    - Collaborated with cross-functional teams to meet administrative and operational demands.
+    - Use of advanced tools in the Office package, Power BI (DAX, Power Query), SAP, Senior and K-SRM (general ABAP purchasing system).
+  
 - company:
     name: Alditel Gestão Econômica em Telecomunicações 
     url: "https://www.aitivus.com.br/"
