@@ -19,7 +19,8 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: <br><br> Profissional com experiência em análise e interpretação de dados para decisões estratégicas de negócios.<br> Focado na transformação de dados em insights valiosos através de análises quantitativas e relatórios precisos.<br>  Habilidades em SQL, Python e ferramentas de BI.<br>  Formação em Análise e Desenvolvimento de Sistemas, cursando 6° semestre de matemática com forte base analítica e compromisso com a precisão dos dados e cumprimento de prazos.<br><br><br><br><br> 
+summary: >-
+  Profissional de dados com experiência em pesquisas de mercado no setor de saúde, análise estatística e automação de processos. Utilizo Python, SQL, SPSS, Excel e Power BI para limpar, validar, transformar e analisar bases de dados, aplicar métodos estatísticos e construir fluxos automatizados de processamento. Minha trajetória também inclui análises financeiras e operacionais, otimização de custos e decisões orientadas por dados. Atualmente, aprofundo meus conhecimentos em Machine Learning Engineering e MLOps, com foco em pipelines reprodutíveis, implantação de modelos e sistemas confiáveis em produção.
 
 
 # your social links
@@ -27,7 +28,7 @@ summary: <br><br> Profissional com experiência em análise e interpretação de
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "diogo.dantas@live.com"
+  url: "mailto:diogo.dantas@live.com"
 
 - name: Github
   icon: "fab fa-github"

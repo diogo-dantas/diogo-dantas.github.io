@@ -19,7 +19,8 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: <br><br> Professional with experience in analyzing and interpreting data for strategic business decisions.<br> Focused on transforming data into valuable insights through quantitative analysis and accurate reporting.<br> Skills in SQL, Python and BI tools.<br> Degree in Systems Analysis and Development, studying 6th semester mathematics with a strong analytical background and a commitment to data accuracy and meeting deadlines.<br><br><br><br><br>
+summary: >-
+  Data professional with experience in healthcare market research, statistical analysis and workflow automation. I use Python, SQL, SPSS, Excel and Power BI to clean, validate, transform and analyze datasets, apply statistical methods, and build automated processing workflows. My background also includes financial and operational analytics, cost optimization and data-driven decision-making. I am expanding my expertise in end-to-end Machine Learning Engineering and MLOps, focusing on reproducible pipelines, model deployment and reliable production systems.
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -46,6 +47,7 @@ socialLinks:
 
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
+
 resourceLinks:
 - title: "My resume"
   url: "files/my_resume.pdf"
