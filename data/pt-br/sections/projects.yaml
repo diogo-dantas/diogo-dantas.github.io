@@ -1,0 +1,48 @@
+# Vitrine selecionada de projetos. Os estudos de caso permanecem em content/posts/.
+section:
+  name: Projetos em Destaque
+  id: projects
+  enable: true
+  weight: 7
+  showOnNavbar: true
+  template: sections/projects.html
+
+buttons:
+  - name: Todos
+    filter: all
+  - name: Engenharia de Dados
+    filter: data-engineering
+  - name: Análise Aplicada
+    filter: analytics
+  - name: Automação
+    filter: automation
+
+projects:
+  - name: ETL em Python - CSV, JSON e XML
+    logo: /images/sections/projects/python.png
+    role: Desenvolvedor
+    url: /pt-br/posts/etl/python/etl-simplificado/
+    summary: >-
+      Pipeline ETL em Python que lê formatos heterogêneos, padroniza registros
+      e gera dados consolidados e logs de execução.
+      [Código-fonte](https://github.com/diogo-dantas/ETL-simplificado-CSV-JSON-e-XML-).
+    tags: [data-engineering, python, etl]
+
+  - name: Análise de Sentimentos com Streamlit
+    logo: /images/sections/projects/python.png
+    role: Desenvolvedor
+    url: /pt-br/posts/data-viz/python/streamlit-us-airlines/
+    summary: >-
+      Análise exploratória interativa de sentimentos com Python e Streamlit,
+      incluindo filtros e visualizações de comentários sobre companhias aéreas.
+      [Código-fonte](https://github.com/diogo-dantas/us-airline-sentiment).
+    tags: [analytics, python, streamlit]
+
+  - name: Boutique Manager - Automação Shell
+    role: Desenvolvedor
+    url: /pt-br/posts/task-automation/shell-script/boutique-manager/
+    summary: >-
+      Scripts Bash para um cenário de varejo, abrangendo estoque,
+      relatórios, logs e agendamento com Cron.
+      [Código-fonte](https://github.com/diogo-dantas/boutique-manager).
+    tags: [automation, bash, cron]

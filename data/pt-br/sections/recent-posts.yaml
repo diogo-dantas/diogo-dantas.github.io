@@ -1,9 +1,10 @@
 section:
-  name: Artigos recentes
+  name: Artigos e Estudos de Caso
   id: recent-posts
   enable: true
   weight: 8
   showOnNavbar: true
 
+# Posts continuam sendo a fonte dos artigos e estudos de caso completos.
 numShow: 3
 showMoreButton: true

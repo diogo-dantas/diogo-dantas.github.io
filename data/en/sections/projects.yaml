@@ -1,0 +1,48 @@
+# Curated project cards. Long-form case studies remain in content/posts/.
+section:
+  name: Featured Projects
+  id: projects
+  enable: true
+  weight: 7
+  showOnNavbar: true
+  template: sections/projects.html
+
+buttons:
+  - name: All
+    filter: all
+  - name: Data Engineering
+    filter: data-engineering
+  - name: Applied Analytics
+    filter: analytics
+  - name: Automation
+    filter: automation
+
+projects:
+  - name: Python ETL - CSV, JSON & XML
+    logo: /images/sections/projects/python.png
+    role: Developer
+    url: /posts/etl/python/etl-simplificado/
+    summary: >-
+      Python ETL workflow that reads heterogeneous files, standardizes records,
+      and produces consolidated output and execution logs.
+      [Source code](https://github.com/diogo-dantas/ETL-simplificado-CSV-JSON-e-XML-).
+    tags: [data-engineering, python, etl]
+
+  - name: Airline Sentiment Explorer
+    logo: /images/sections/projects/python.png
+    role: Developer
+    url: /posts/data-viz/python/streamlit-us-airlines/
+    summary: >-
+      Interactive exploratory sentiment analysis built with Python and Streamlit,
+      featuring filters and visualizations of airline tweets.
+      [Source code](https://github.com/diogo-dantas/us-airline-sentiment).
+    tags: [analytics, python, streamlit]
+
+  - name: Boutique Manager - Shell Automation
+    role: Developer
+    url: /posts/task-automation/shell-script/boutique-manager/
+    summary: >-
+      Bash scripts supporting a retail case study with inventory workflows,
+      reports, logs and scheduling with Cron.
+      [Source code](https://github.com/diogo-dantas/boutique-manager).
+    tags: [automation, bash, cron]

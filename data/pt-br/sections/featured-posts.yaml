@@ -1,12 +1,7 @@
+# Substituído pela seção Projects do tema, sem duplicar a vitrine.
 section:
-  name: Projetos em destaque
+  name: Postagens em Destaque
   id: featured-posts
-  enable: true
+  enable: false
   weight: 7
-  showOnNavbar: true
-  hideTitle: false
-
-# posts to feature
-posts:
-  - etl-simplificado
-  - streamlit-us-airlines
+  showOnNavbar: false

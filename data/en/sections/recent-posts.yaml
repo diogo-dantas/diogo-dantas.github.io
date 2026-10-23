@@ -1,9 +1,10 @@
 section:
-  name: Latest Technical Articles
+  name: Articles & Case Studies
   id: recent-posts
   enable: true
   weight: 8
   showOnNavbar: true
 
+# Posts remain the source of long-form articles and project case studies.
 numShow: 3
 showMoreButton: true

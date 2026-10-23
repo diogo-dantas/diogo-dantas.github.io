@@ -1,12 +1,7 @@
+# Replaced by the native Projects section to avoid a duplicate showcase.
 section:
-  name: Featured Engineering Projects
+  name: Featured Posts
   id: featured-posts
-  enable: true
+  enable: false
   weight: 7
-  showOnNavbar: true
-  hideTitle: false
-
-# posts to feature
-posts:
-  - etl-simplificado
-  - streamlit-us-airlines
+  showOnNavbar: false
