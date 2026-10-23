@@ -1,50 +1,107 @@
 ---
-title: "Gerenciamento Inteligente: Integrando Shell script e automatizando tarefas"
+title: "Boutique Manager: Automação de Operações com Bash"
 date: 2024-10-31T06:00:23+06:00
+lastmod: 2026-10-23
 hero: /images/post2.jpg
-description: Automatizando tarefas com shell script e agendamentos com cron.
+description: "Estudo de caso em Bash e Cron para estoque, vendas, relatórios, logs e backups agendados."
 theme: Toha
 menu:
   sidebar:
-    name: 'Gerenciamento Inteligente: Integrando Shell script e automatizando tarefas'
+    name: "Boutique Manager — Bash"
     identifier: task-automation-shell-script-cron
     weight: 500
     parent: task-automation-shell-script
-categories: 
-- Automação de Tarefas
-tags: ["Cron", "Shell Script", "Bash (Unix Shell)"]
+categories: ["Automação"]
+tags: ["Bash", "Shell Script", "Cron"]
 ---
 
+## Resumo executivo
 
-Scripts em shell são ferramentas poderosas que permitem automatizar diversas tarefas em sistemas Unix e Linux. Ao encapsular uma série de comandos em um único script, é possível otimizar processos, reduzir erros e aumentar a eficiência operacional. Essa linguagem de programação versátil facilita a manipulação de arquivos, a automação de tarefas administrativas e oferece um controle preciso sobre o sistema, tornando-a ideal para diversas aplicações.
+O **Boutique Manager** é um **projeto em shell script para o cenário de uma pequena loja de roupas**. Seu menu em terminal reúne cadastro de produtos, controle de estoque, vendas, alertas de reposição, relatórios, logs e backups.
 
+O trabalho surgiu da aplicação dos conceitos do curso [Hands-on Introduction to Linux Commands and Shell Scripting](https://www.coursera.org/account/accomplishments/verify/30JGE2RZY8T4). É um exercício prático de automação, sem alegação de implantação em um varejista real.
 
+{{< project-overview title="Boutique Manager — Automação com Bash" domain="Automação / Shell Scripting" stack="Bash · Linux · awk · sort · uniq · Cron" focus="Estoque · Vendas · Operações com arquivos · Auditoria" outputs="Menu de terminal · Relatórios · Logs · Backups agendados" status="Projeto demonstrativo" repo="https://github.com/diogo-dantas/boutique-manager" >}}
 
-Utilizando o conhecimento adquirido no curso [Hands-on Introduction to Linux Commands and Shell Scripting](https://www.coursera.org/account/accomplishments/verify/30JGE2RZY8T4 "Visite o certificado do curso") , apliquei em um cenário real o projeto Boutique Manager, que consiste em um sistema de gerenciamento em shell script para pequenas lojas de roupas. 
+## Problema e requisitos
 
-O sistema proporciona um conjunto integrado de funcionalidades essenciais para a administração de uma loja de roupas, iniciando pelo cadastro de produtos, que permite registrar informações detalhadas por categoria e gerenciar o estoque automaticamente. O módulo de vendas processa transações em tempo real, atualizando o estoque e registrando informações como data, hora e valores. Além disso, um sistema de monitoramento de estoque alerta proativamente sobre níveis baixos de produtos, facilitando a reposição. Relatórios de vendas oferecem análises abrangentes do desempenho do negócio, incluindo totais por categoria e período.
+Uma loja de pequeno porte precisa manter cadastro de produtos e estoque, registrar vendas e reduzir o risco de perda de informações. Atualizações manuais de arquivos podem gerar inconsistências e dificultar a auditoria das operações.
 
-A segurança e a integridade dos dados são asseguradas por um sistema automatizado de backup, que protege informações críticas diariamente, além de um robusto sistema de logs que registra todas as operações para fins de auditoria. O sistema realiza validações em operações críticas, como a verificação da quantidade disponível em estoque antes das vendas, e usa arquivos temporários para manter a integridade durante atualizações. Todas essas funcionalidades são acessíveis por meio de um menu intuitivo, que organiza as operações de forma lógica, permitindo que usuários com diferentes níveis de experiência operem o sistema com eficiência, resultando em uma gestão mais eficaz e segura da loja.
+A solução em terminal busca:
 
-<br>
+- cadastrar produtos e agrupar itens por categoria;
+- registrar transações com data, hora e valores;
+- atualizar o estoque após as vendas, validando quantidades disponíveis;
+- apontar baixos níveis de estoque e gerar relatórios por categoria e período;
+- manter logs de operação e backups agendados;
+- reunir as funcionalidades em um menu simples.
 
-![Resumo Visual](./images/BM_layout.png)
-*Observação: Abra a imagem em uma nova aba do navegador para o zoom necessário.*
+## Arquitetura e fluxo dos dados
 
-<br>
+```text
+Menu de terminal (Bash)
+       │
+       ├── Cadastro de produtos ──► Arquivos de estoque
+       ├── Vendas ────────────────► Atualização + registros
+       ├── Relatórios ────────────► Totais por período/categoria
+       └── Operações ─────────────► Logs com data e hora
+                                          │
+Cron ────────────────────────────────────► Backups / checagem de estoque
+```
 
-O projeto de gerenciamento em shell script utiliza diversas técnicas essenciais, incluindo variáveis de ambiente como LOJA_DIR e DATA, definidas com o comando export para facilitar a configuração do ambiente. A manipulação de dados é otimizada por meio do uso de pipes e filtros, como awk, sort e uniq, permitindo a geração de estatísticas relevantes. Metacaracteres, como * para padrões de arquivos e $(...) para substituição de comandos, também são empregados para aumentar a flexibilidade do script. O redirecionamento de I/O é utilizado para registrar logs e criar novos arquivos, assegurando uma gestão eficiente dos dados.
+**Entrada.** Seleções no terminal e dados de produtos e vendas informados pelo usuário.
 
-A modularização do código por meio de funções melhora a legibilidade e a manutenção, enquanto a passagem de parâmetros permite uma maior reutilização. Estruturas condicionais, como if/then/else e case, são aplicadas para gerenciar o menu do sistema, complementadas por loops while, que facilitam a interação com o usuário e a iteração sobre arrays, como o de categorias. O agendamento de tarefas é gerenciado pelo cron, garantindo a realização de backups automáticos e verificações semanais do estoque, o que contribui para a robustez e a confiabilidade do sistema. A segurança dos dados é assegurada através de operações atômicas usando arquivos temporários durante atualizações, enquanto o registro de todas as operações é mantido por meio de logs com data e hora, utilizando o comando date.
+**Processamento.** Funções de shell manipulam arquivos, validam quantidades e produzem resumos.
 
-Os benefícios da automação por meio de scripts são vastos. Ao automatizar tarefas repetitivas, é possível economizar tempo, reduzir o risco de erros humanos e garantir a consistência dos processos. Além disso, scripts podem ser utilizados para monitorar sistemas, gerar relatórios e realizar backups, proporcionando uma maior segurança e confiabilidade. Em um mundo cada vez mais digital, a automação por meio de scripts se torna um diferencial competitivo para empresas que buscam otimizar seus processos e alcançar a excelência operacional.
+**Saída.** Registros de estoque e vendas, relatórios, logs de operações e cópias de segurança.
 
+### Diagrama do projeto
 
-Para mais detalhes, implementar este projeto ou fornecer sugestões e melhorias, acesse o link do repositório  abaixo.
+![Resumo visual do projeto](./images/BM_layout.png)
 
-#### Repositório do projeto
+*Dica: abra a imagem em uma nova aba para ampliar.*
 
-https://github.com/diogo-dantas/boutique-manager
+## Decisões de implementação
 
-<a href="http://www.freepik.com">Designed by gstudioimagen / Freepik</a>
+**1. Modularização e fluxo de controle.** O projeto usa funções, parâmetros, `if/then/else`, `case`, `while` e iteração sobre categorias para organizar o menu interativo.
 
+**2. Processamento de texto.** Pipes e filtros como `awk`, `sort` e `uniq` apoiam a geração de estatísticas e relatórios de estoque e vendas.
+
+**3. Configuração e entrada/saída.** Variáveis como `LOJA_DIR` e `DATA`, `export`, padrões de arquivos, substituição de comandos e redirecionamentos organizam caminhos e registros de execução.
+
+**4. Integridade e rastreabilidade.** O artigo descreve verificação de quantidades antes das vendas, atualizações com arquivos temporários e logs datados.
+
+**5. Agendamento.** Cron é usado para backups e verificações recorrentes. O texto descreve backups diários e checagens semanais de estoque.
+
+## Demonstração
+
+O projeto disponibiliza o diagrama de arquitetura acima e o [repositório de código-fonte](https://github.com/diogo-dantas/boutique-manager). A implementação pode ser explorada pelos scripts do repositório.
+
+## Testes e qualidade dos dados
+
+As verificações a seguir são **testes recomendados**, sem afirmar que existe uma suíte automatizada já documentada:
+
+- impedir vendas superiores à quantidade disponível;
+- validar cadastros com campos ausentes ou inválidos;
+- conferir a consistência entre vendas registradas e estoque atualizado;
+- comparar totais de relatórios com uma base pequena conhecida;
+- testar falhas durante a escrita de arquivos temporários;
+- conferir presença e interpretação das datas nos logs;
+- verificar tarefas Cron e restauração de backups gerados.
+
+## Resultados e limitações
+
+**Entrega demonstrada:** fluxo de gerenciamento em Bash para o cenário descrito, integrando vendas, estoque, relatórios, logs e backups.
+
+**Limitações:** não foram documentados usuários em produção, economia de tempo medida, garantias de concorrência ou benchmarks de restauração. O controle de estado por arquivos exigiria reforços para vários usuários simultâneos.
+
+## Aprendizados e próximos passos
+
+O estudo demonstra como utilitários simples de shell podem formar um sistema coeso. Evoluções possíveis incluem lint com `shellcheck`, testes automatizados, configurações explícitas e um procedimento documentado de restauração de backups.
+
+## Repositório e referências
+
+- [Repositório Boutique Manager](https://github.com/diogo-dantas/boutique-manager)
+- [Certificado do curso de Linux e Shell Scripting](https://www.coursera.org/account/accomplishments/verify/30JGE2RZY8T4)
+
+Crédito da ilustração de capa: [gstudioimagen / Freepik](https://www.freepik.com/).

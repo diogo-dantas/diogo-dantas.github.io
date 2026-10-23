@@ -1,11 +1,9 @@
-# section information
 section:
-  name: Projetos recentes
+  name: Artigos recentes
   id: recent-posts
   enable: true
   weight: 8
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
-# no additional configuration is required
+numShow: 3
+showMoreButton: true

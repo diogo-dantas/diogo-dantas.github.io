@@ -1,35 +1,103 @@
 ---
-title: "O impacto de implementar um dashboard em Power BI na análise de vendas e devoluções"
+title: "Análise de Vendas e Devoluções: Dashboard em Power BI"
 date: 2025-02-20T06:00:10+06:00
+lastmod: 2026-10-23
 hero: /images/post2.png
-description: Automatizando e visualizando dados de vendas e devoluções de produtos.
+description: "Estudo de caso com Power Query, indicadores de vendas e análise de devoluções para um varejo fictício."
 theme: Toha
 menu:
   sidebar:
-    name: Dashboard de Vendas e Devoluções
+    name: "Power BI: Vendas e Devoluções"
     identifier: dataviz-pbi-etlsales
     weight: 600
     parent: dataviz-pbi
-categories: 
-- Análise de Dados
-tags: ["ETL", "Power BI", "Visualização de Dados"]
+categories: ["Análise de Dados"]
+tags: ["Power BI", "Power Query", "Dashboards"]
 ---
 
+## Resumo executivo
 
-Em um setor altamente competitivo como o de eletrônicos, a análise eficiente dos dados de vendas e devoluções é essencial para aprimorar processos e elevar o desempenho das lojas. Para uma rede fictícia de estabelecimentos, criei um dashboard em Power BI com o intuito de fornecer uma visão clara e dinâmica desses dados, auxiliando a tomada de decisões mais estratégicas.
+Este projeto apresenta um **dashboard em Power BI para análise de vendas e devoluções** de uma **rede fictícia de lojas de eletrônicos**. A solução prepara arquivos XLSX com Power Query e organiza três perspectivas: desempenho geral, produtos e marcas, e devoluções.
 
-A principal tarefa era transformar dados brutos de vendas e devoluções em informações valiosas e estratégicas. Para isso, utilizei o Power Query no processo de ETL (Extração, Transformação e Carga) a partir de arquivos no formato XLSX. Esse trabalho incluiu uma limpeza detalhada e a normalização dos dados, estruturando os de maneira eficiente para a análise.
+O objetivo é facilitar a leitura de indicadores comerciais e apoiar discussões sobre desempenho e melhorias operacionais. Trata-se de um projeto demonstrativo de portfólio, **sem evidência de implantação real ou economia financeira mensurada**.
 
-O dashboard foi dividido em três cenários principais: o primeiro apresenta o desempenho geral, mostrando dados de faturamento, lucro e vendas de forma interativa. O segundo foca no desempenho por produto e marca, permitindo filtros por período e localização geográfica. O terceiro cenário aborda as devoluções, facilitando a identificação de padrões e a otimização de processos internos. Cada cenário foi projetado para ser intuitivo e fornecer insights essenciais para as equipes de vendas e gestão.
+{{< project-overview title="Análise de Vendas e Devoluções — Power BI" domain="Análise de Dados / Business Intelligence" stack="Power BI · Power Query · XLSX" focus="Preparação de dados · KPIs · Análise interativa" outputs="Dashboard · Visões de vendas, produtos e devoluções" status="Estudo de caso (negócio fictício)" >}}
 
-Como resultado, a empresa agora conta com uma ferramenta robusta para monitorar seu desempenho e identificar áreas de melhoria. A automação da atualização de dados assegura que as informações estejam sempre atualizadas e prontas para análise, tornando mais ágil o processo de definição de estratégias de vendas e contribuindo para a redução de custos com devoluções. O dashboard se consolidou como um recurso estratégico, impactando positivamente a performance no competitivo mercado de eletrônicos.
+## Problema e requisitos
 
-O vídeo abaixo apresenta o dashboard implementado. 
+Informações de vendas, rentabilidade e produtos devolvidos se relacionam, mas quando são examinadas separadamente é mais difícil identificar padrões. O cenário fictício exige uma visualização reutilizável, explorável por usuários de negócio.
 
-<br>
+O dashboard deve:
+
+- consolidar entradas de vendas e devoluções em arquivos XLSX;
+- organizar os dados de origem para relatórios consistentes;
+- apresentar faturamento, lucro e vendas em uma visão geral;
+- permitir análises por produto, marca, período e localização;
+- facilitar a investigação de padrões nas devoluções.
+
+## Arquitetura e fluxo dos dados
+
+```text
+Arquivos XLSX
+      │
+      ▼
+Power Query — extração, limpeza e normalização
+      │
+      ▼
+Base analítica preparada / modelo de dados
+      │
+      ▼
+Dashboard Power BI
+      ├── Desempenho geral: vendas, faturamento e lucro
+      ├── Produtos e marcas: filtros de período e localização
+      └── Devoluções: distribuição e padrões recorrentes
+```
+
+**Entradas.** Registros de vendas e devoluções em planilhas.
+
+**Processamento.** O Power Query realiza extração, limpeza e normalização para preparar as informações usadas no relatório.
+
+**Consumo.** O Power BI disponibiliza visões interativas para as equipes de vendas e gestão.
+
+## Decisões de implementação
+
+**1. Três perspectivas de negócio.** Separar desempenho geral, produtos/marcas e devoluções ajuda o leitor a partir de um indicador geral e investigar uma questão específica.
+
+**2. Filtros interativos.** Seleções por período e localização facilitam comparações que seriam mais trabalhosas em relatórios estáticos.
+
+**3. Preparação anterior à visualização.** O tratamento dos arquivos no Power Query busca consistência quando as fontes são atualizadas.
+
+O artigo original descreve essas perspectivas, mas não documenta medidas DAX específicas, modelo estrela ou infraestrutura de atualização. Esses detalhes só devem ser incluídos após verificar o `.pbix`.
+
+## Demonstração
+
+O vídeo original apresenta o dashboard implementado:
 
 {{< youtube Jn5MxVGL2JQ >}}
 
-<br>
+## Testes e qualidade dos dados
 
-<a href="http://www.freepik.com">Designed by gstudioimagen / Freepik</a>
+Estas são **validações recomendadas**, e não uma afirmação de que já existe uma suíte automatizada de testes:
+
+- conciliar os totais de vendas e devoluções com as planilhas de origem;
+- validar campos numéricos, datas e formatos de moeda;
+- conferir a interação dos filtros nas três visões;
+- investigar produtos duplicados, identificadores ausentes e valores inconsistentes;
+- confirmar o significado de lucro e devoluções antes das comparações;
+- avaliar o dashboard em diferentes resoluções.
+
+## Resultados e limitações
+
+**Entrega demonstrada:** dashboard interativo com visões de desempenho geral, produtos/marcas e devoluções, usando um cenário fictício de varejo.
+
+**Limitações:** não foram documentados resultados reais de negócio, redução de custos comprovada, SLA de implantação ou benchmark de atualização. O trabalho demonstra o processo analítico, não um rollout mensurado.
+
+## Aprendizados e próximos passos
+
+O estudo reforça que a preparação dos dados é parte essencial da confiabilidade dos KPIs. Como evolução, é possível documentar o modelo semântico, as fórmulas DAX e validações reproduzíveis, confrontando os números do dashboard com consultas de referência.
+
+## Repositório e referências
+
+O material disponível é o [vídeo de demonstração do Power BI](https://www.youtube.com/watch?v=Jn5MxVGL2JQ). O artigo original não informava um repositório de código.
+
+Crédito da ilustração de capa: [gstudioimagen / Freepik](https://www.freepik.com/).

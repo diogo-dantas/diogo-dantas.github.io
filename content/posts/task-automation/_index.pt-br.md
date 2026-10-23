@@ -1,8 +1,8 @@
 ---
-title: Top Category Sample
+title: "Automação e Scripts"
 menu:
   sidebar:
-    name: Automação de Tarefas
+    name: "Automação e Scripts"
     identifier: task-automation
     weight: 20
 ---

@@ -1,8 +1,8 @@
 ---
-title: Sub-Category
+title: "Python"
 menu:
   sidebar:
-    name: Python
+    name: "Python"
     identifier: etl-py
     parent: etl
     weight: 10

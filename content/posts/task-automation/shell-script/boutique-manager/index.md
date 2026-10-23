@@ -1,46 +1,107 @@
 ---
-title: "Intelligent management: Shell script integration and task automation"
+title: "Boutique Manager: Automating Retail Operations with Bash"
 date: 2024-10-31T06:00:23+06:00
+lastmod: 2026-10-23
 hero: /images/post2.jpg
-description: Automate tasks with shell script and schedule with cron.
+description: "A Bash and Cron case study for inventory, sales, reporting, logging and scheduled backups."
 theme: Toha
 menu:
   sidebar:
-    name: 'Intelligent management: Shell Script integration and task automation'
+    name: "Boutique Manager — Bash"
     identifier: task-automation-shell-script-cron
     weight: 500
     parent: task-automation-shell-script
-categories: 
-- task-automation
-tags: ["Cron", "Shell Script", "Bash (Unix Shell)"]
+categories: ["Automation"]
+tags: ["Bash", "Shell Script", "Cron"]
 ---
 
-Shell scripts are powerful tools that allow you to automate various tasks on Unix and Linux systems. By encapsulating a series of commands in a single script, it is possible to streamline processes, reduce errors and increase operational efficiency. This versatile programming language makes it easy to manipulate files, automate administrative tasks and provide precise control over the system, making it ideal for a wide range of applications.
+## Executive summary
 
-Using the knowledge acquired in the course [Hands-on Introduction to Linux Commands and Shell Scripting](https://www.coursera.org/account/accomplishments/verify/30JGE2RZY8T4 "Visit the course certificate"), I applied the project to a real-world scenario, Boutique Manager, which consists of a shell script management system for small clothing stores. 
+**Boutique Manager** is a **shell scripting project for a small clothing shop scenario**. Its command-line menu brings together product registration, inventory updates, sales, stock alerts, reporting, logging and backups.
 
-The system provides an integrated set of essential functions for managing a clothing store, starting with product registration, which allows you to record detailed information by category and manage stock automatically. The sales module processes transactions in real time, updating stock levels and recording information such as date, time and value. In addition, a stock monitoring system proactively alerts you to low product levels, facilitating replenishment. Sales reports provide comprehensive analysis of business performance, including totals by category and period.
+The project originated from applying concepts studied in the [Hands-on Introduction to Linux Commands and Shell Scripting course](https://www.coursera.org/account/accomplishments/verify/30JGE2RZY8T4). It is a practical automation exercise, rather than a claim of deployment at a commercial retailer.
 
-Data security and integrity is ensured by an automated backup system that protects critical information on a daily basis, and a robust logging system that records all operations for audit purposes. The system performs validations on critical operations, such as checking available stock before selling, and uses temporary files to maintain integrity during updates. All of this functionality is accessible through an intuitive menu that organises operations logically, allowing users with different levels of experience to operate the system efficiently, resulting in more effective and secure store management.
+{{< project-overview title="Boutique Manager — Bash Automation" domain="Automation / Systems Scripting" stack="Bash · Linux · awk · sort · uniq · Cron" focus="Inventory · Sales · File operations · Auditability" outputs="Terminal menu · Sales reports · Logs · Scheduled backups" status="Demonstration project" repo="https://github.com/diogo-dantas/boutique-manager" >}}
 
-<br>
+## Problem and requirements
 
-![Visual Summary](./images/BM_layout.png)
-*Note: Open the image in a new browser tab to get the zoom you need.*
+A small retailer needs a consistent way to track products and stock, record sales, and avoid losing operational data. Repeating manual file updates can introduce inconsistencies and is difficult to audit.
 
-<br>
+The command-line solution aims to:
 
-The shell script management project uses several essential techniques, including environment variables such as LOJA_DIR and DATA, defined with the export command, to facilitate environment configuration. Data manipulation is optimised through the use of pipes and filters such as awk, sort and uniq, allowing relevant statistics to be generated. Meta characters such as * for file patterns and $(...) for command substitution are also used to increase script flexibility. I/O redirection is used to record logs and create new files, ensuring efficient data management.
+- register products and organize inventory by category;
+- record sales with date, time and amounts;
+- update stock after transactions, checking quantities before a sale;
+- highlight low stock and report performance by category and period;
+- keep operational logs and schedule backups;
+- provide a simple menu for these operations.
 
-Modularising the code through functions improves readability and maintainability, while passing parameters allows greater reusability. Conditional structures such as if/then/else and case are used to manage the system menu, complemented by while loops that facilitate user interaction and iteration over arrays such as categories. Task scheduling is managed by cron, which ensures automatic backups and weekly inventory checks, contributing to the robustness and reliability of the system. Data security is provided by atomic operations using temporary files during updates, while a record of all operations is maintained through time-stamped logs using the date command.
+## Architecture and data flow
 
-The benefits of scripting automation are enormous. By automating repetitive tasks, you can save time, reduce the risk of human error and ensure process consistency. In addition, scripts can be used to monitor systems, generate reports and perform backups, providing greater security and reliability. In an increasingly digital world, scripting automation is becoming a competitive differentiator for organisations seeking to optimise processes and achieve operational excellence.
+```text
+Command-line menu (Bash)
+       │
+       ├── Product registry ───► Inventory files
+       ├── Sales workflow ────► Stock updates + sales records
+       ├── Reports ───────────► Aggregations by period/category
+       └── Operations ────────► Timestamped logs
+                                      │
+Cron schedules ──────────────────────► Backups / stock checks
+```
 
-For more details, to implement this project, or to make suggestions and improvements, visit the repository link below.
+**Input.** User selections and product/sales details entered in the terminal.
 
-#### Project repository
+**Processing.** Shell functions manipulate structured files, validate stock quantities and prepare summaries.
 
-https://github.com/diogo-dantas/boutique-manager
+**Output.** Updated inventory/sales records, reports, audit-style logs and backup artifacts.
 
+### Architecture illustration
 
-<a href="http://www.freepik.com">Designed by gstudioimagen / Freepik</a>
+![Project diagram](./images/BM_layout.png)
+
+*Tip: open the diagram in a separate browser tab to zoom in.*
+
+## Implementation decisions
+
+**1. Bash modules and control flow.** The project uses functions, parameters, `if/then/else`, `case`, `while` and iteration over categories to keep the interactive menu maintainable.
+
+**2. Text processing tools.** Pipes and command-line filters such as `awk`, `sort` and `uniq` support report generation and aggregation of inventory and sales information.
+
+**3. Environment configuration and I/O.** Variables including `LOJA_DIR` and `DATA`, `export`, file patterns, command substitution and redirection organize execution paths and logs.
+
+**4. Data integrity and auditability.** The implementation describes quantity checks before sales, temporary-file updates and timestamped operation logs.
+
+**5. Scheduled operations.** Cron is used to schedule recurring backups and inventory checks. The original article describes daily backups and weekly inventory checks.
+
+## Demo
+
+The project provides a visual architecture diagram above and a [source repository](https://github.com/diogo-dantas/boutique-manager). 
+
+## Testing and data quality
+
+The following are **recommended tests**; a formal automated test suite was not documented:
+
+- prevent sales when requested quantity exceeds available inventory;
+- validate product registration with missing or invalid fields;
+- check whether inventory changes are consistent with sales records;
+- verify report totals with a small known dataset;
+- test recovery when temporary-file writes fail;
+- ensure log timestamps are present and meaningful;
+- check Cron jobs and restoration from generated backups.
+
+## Results and limitations
+
+**Demonstrated deliverable:** a Bash-based management workflow for the described store scenario, combining sales, inventory, reports, logging and backups.
+
+**Limitations:** there are no documented production users, measured time savings, concurrency guarantees or verified backup-restore benchmarks. Shell/file-based state management would require further hardening for multiple simultaneous users.
+
+## Lessons learned and next steps
+
+The case study shows how small shell utilities can be combined into a useful workflow. Future improvements could introduce shell linting (`shellcheck`), automated tests, explicit configuration management and a documented restore procedure for backups.
+
+## Repository and references
+
+- [Boutique Manager repository](https://github.com/diogo-dantas/boutique-manager)
+- [Linux and Shell Scripting course certificate](https://www.coursera.org/account/accomplishments/verify/30JGE2RZY8T4)
+
+Cover illustration credit: [gstudioimagen / Freepik](https://www.freepik.com/).

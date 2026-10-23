@@ -1,43 +1,110 @@
 ---
-title: Sentiment Analysis of Airline Tweets via Streamlit
+title: "Airline Sentiment Analysis: Interactive Exploration with Streamlit"
 date: 2025-02-22T06:00:16+06:00
+lastmod: 2026-10-23
 hero: /images/post3.png
-description: Interactive sentiment analysis in tweets about airlines.
+description: "An interactive Streamlit case study of airline tweet sentiment, charts, location filters and word clouds."
 theme: Toha
 menu:
   sidebar:
-    name: Sentiment Analysis via Streamlit
+    name: "Airline Sentiment with Streamlit"
     identifier: dataviz-py-streamus
     weight: 500
     parent: dataviz-py
-categories: 
-- Data Analysis
-tags: ["EDA","Python","Pandas", "Numpy", "Streamlit", "Data Visualization"]
+categories: ["Data Analytics"]
+tags: ["Python", "Streamlit", "Sentiment Analysis"]
 ---
 
-The project to analyze sentiment in tweets about airlines was developed to offer an interactive and engaging interface using Streamlit. The purpose of the application is to enable users to view tweets classified according to the type of sentiment - positive, negative or neutral - in order to analyze public perceptions in real time. With this tool, it is possible to explore how people feel about airlines and get a clearer picture of what is being discussed on social networks.
+## Executive summary
 
-One of the app's main features is the presentation of interactive graphs, such as barplots and pie charts, which illustrate the distribution of sentiment among tweets. These visualizations allow a quick comparison between the different types of sentiment, facilitating data analysis. The flexibility in choosing the visualization format is a strong point, allowing the user to customize the way they explore the data according to their needs and preferences.
+This case study describes an **interactive Streamlit app for exploring tweets about airlines**, grouped by **positive, negative and neutral sentiment**. Users can inspect sentiment distributions, filter by time and location, compare airlines and explore frequently used terms.
 
-In addition, the application offers the possibility of carrying out a temporal and geographical analysis of tweets. The user can select a specific time interval and observe the number of tweets posted during that period. It is also possible to visualize the geographical distribution of opinions by means of an interactive map, which provides a more in-depth understanding of how opinions about airlines vary between different countries.
+The project focuses on **exploratory analysis and visualization of sentiment-labeled tweets**. The original article does not document training or evaluating a new sentiment classification model. Its use of a tweet dataset should not be confused with verified real-time social media ingestion.
 
-The project also includes a comparison between airlines, displaying bar graphs that show the number of tweets and the sentiments related to each company. This feature is very useful for marketing professionals and managers, who can analyze the performance of their brands on social networks. The inclusion of a word cloud, generated from the sentiments associated with the tweets, offers a detailed view of the most commented topics, allowing companies' strengths and weaknesses to be identified, as well as providing valuable data for improving strategies and the customer experience.
+{{< project-overview title="Airline Sentiment Explorer — Streamlit" domain="Data Analytics / Sentiment Analysis" stack="Python · Streamlit · Pandas · Charts" focus="Exploratory analysis · Filtering · Visual communication" outputs="Interactive app · Charts · Map · Word cloud" status="Portfolio application" repo="https://github.com/diogo-dantas/us-airline-sentiment" >}}
 
-The video below, in Portuguese, shows the app implemented.
+## Problem and requirements
 
-<br>
+Airline-related social media data contains varied opinions. Reading posts individually makes it difficult to compare perceptions across companies, dates and locations.
+
+The application aims to:
+
+- explore tweets by sentiment category (positive, negative or neutral);
+- compare distributions using bar charts and pie charts;
+- filter activity over a selected time period;
+- visualize geographic distribution on a map;
+- compare sentiment across different airlines;
+- summarize recurring terms through a word cloud.
+
+## Architecture and data flow
+
+```text
+Tweet dataset with sentiment information
+                │
+                ▼
+      Data selection / filtering
+                │
+                ▼
+         Streamlit interface
+       ┌────────┼─────────────┐
+       ▼        ▼             ▼
+  Sentiment  Timeline &    Airline comparison
+   charts       map        and word cloud
+```
+
+**Input.** A collection of tweets and their associated sentiment labels and supporting fields.
+
+**Processing.** The app filters the data according to user selections and aggregates observations for display.
+
+**Output.** Interactive visualizations intended to help users explore customer sentiment patterns.
+
+This is a logical overview derived from the documented application features, not an assertion about an undocumented data ingestion or model-training pipeline.
+
+## Implementation decisions
+
+**1. Streamlit interface.** A Python-first framework makes exploratory data views accessible through interactive components.
+
+**2. Multiple visual encodings.** Bar and pie charts support different ways to inspect sentiment proportions. The word cloud provides a complementary, qualitative overview of frequent terms.
+
+**3. Time, location and airline comparisons.** These filters let readers ask more focused questions than a global sentiment count alone.
+
+**4. Distinguishing data labels from model predictions.** The original article does not establish how sentiment labels were generated, so this study does not claim supervised model training.
+
+## Demo
+
+The video below, originally recorded in Portuguese, shows the application:
 
 {{< youtube c_dyIX5v_uk >}}
 
-<br>
+The original project also provides a [Streamlit app link](https://us-airline-sentiment.streamlit.app/). Availability of the hosted service may change.
 
-#### App for viewing
+## Testing and data quality
 
-https://us-airline-sentiment.streamlit.app/
+The following are **recommended checks**, not a statement that automated tests have already been implemented:
 
-#### Project repository
+- inspect missing and duplicate tweet records;
+- validate supported sentiment labels and filter values;
+- compare plotted counts with source aggregations;
+- check whether time and country fields are parsed consistently;
+- test empty filter results and missing geographic information;
+- verify that the Streamlit charts remain usable on smaller screens.
 
-https://github.com/diogo-dantas/us-airline-sentiment
+If model training is added in a future version, separate evaluation metrics and dataset leakage checks will be needed.
 
+## Results and limitations
 
-<a href="http://www.freepik.com">Designed by gstudioimagen / Freepik</a>
+**Demonstrated outcome:** a Streamlit application with sentiment distributions, airline comparisons, temporal/geographic exploration and a word cloud.
+
+**Limitations:** no verified classification accuracy, latency measurements, production monitoring or live-streaming pipeline is established by the available article. The current case study should be read as interactive analytics.
+
+## Lessons learned and next steps
+
+The project illustrates how interface design and filtering can make an analytical dataset easier to explore. A future technical iteration could add data-quality checks, explicit data lineage and, if appropriate, a separately documented sentiment classifier with proper train/test evaluation.
+
+## Repository and references
+
+- [Project repository](https://github.com/diogo-dantas/us-airline-sentiment)
+- [Streamlit application](https://us-airline-sentiment.streamlit.app/)
+- [Demonstration video](https://www.youtube.com/watch?v=c_dyIX5v_uk)
+
+Cover illustration credit: [gstudioimagen / Freepik](https://www.freepik.com/).

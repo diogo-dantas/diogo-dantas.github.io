@@ -1,8 +1,8 @@
 ---
-title: Top Category Sample
+title: "Análise de Dados"
 menu:
   sidebar:
-    name: Visualização de Dados
+    name: "Análise de Dados"
     identifier: dataviz
     weight: 20
 ---

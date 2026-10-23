@@ -1,45 +1,102 @@
 ---
-title: "ETL simplified: unified data"
+title: "Building a Python ETL Pipeline: Unifying CSV, JSON and XML Data"
 date: 2024-09-20T06:00:23+06:00
+lastmod: 2026-10-23
 hero: /images/post1.jpg
-description: Automate data collection.
+description: "A practical ETL case study: ingesting heterogeneous files, standardizing data and producing auditable outputs."
 theme: Toha
 menu:
   sidebar:
-    name: Compiled data
+    name: "Python ETL: CSV, JSON & XML"
     identifier: etl-py-etlsimp
     weight: 500
     parent: etl-py
-categories: 
-- Data Engineer
-tags: ["ETL", "Python"]
+categories:
+  - Data Engineering
+tags: ["Python", "ETL", "Data Quality"]
 ---
 
-In today's dynamic business environment, integrating and analysing data from multiple sources is essential for making informed decisions. In many industries, such as finance, logistics or marketing, it is common to receive data files in a variety of formats, including CSV, XML and JSON. These files can contain valuable information, but their dispersion and variety of formats make processing and analysis a significant challenge.
+## Executive summary
 
-One of the challenges in this scenario is the need to consolidate information from multiple files into a single format that can be easily imported into a database, for example. The task becomes even more critical when considering the need to maintain data integrity and consistency during this compilation process.
+This project demonstrates a straightforward **Extract, Transform, Load (ETL)** workflow written in Python. It consolidates records stored in **CSV, JSON and XML** files into a consistent dataset and produces two artifacts: `transformed_data.csv` and `log_file.txt`.
 
-To illustrate a simple and effective solution to this challenge, I have used as an example files containing name, height and weight information available in a central directory dedicated to this purpose. The data is stored in various formats: CSV, JSON and XML.
+The case study focuses on the core engineering considerations behind the implementation: heterogeneous inputs, standardization rules, repeatable execution and traceability through logs. It is a small-scale educational pipeline, rather than a production platform.
 
-ETL is a fundamental process in data management and system integration. Through this process, using the Python language and libraries: glob, pandas, datetime and ElementTree, information is extracted from the files, transforming weight from inches to kg and height from pounds to metres according to defined business rules. The compiled data is returned in a csv file called transformed_data.csv. Another fundamental output file to store all the actions performed during the ETL process will be the log_file.txt file.
+{{< project-overview title="Python ETL — Unified Data Pipeline" domain="Data Engineering" stack="Python · pandas · glob · ElementTree · datetime" focus="Extraction · standardization · logging" outputs="transformed_data.csv · log_file.txt" status="Demonstration project" repo="https://github.com/diogo-dantas/ETL-simplificado-CSV-JSON-e-XML-" >}}
 
-The importance of a log file in an ETL process lies in its ability to provide a complete trace of all activities performed. By recording each step in detail, the log allows teams to monitor execution in real time, quickly identify and resolve problems, optimise process performance, comply with regulatory requirements and document all actions for future reference. In addition, regular analysis of the log allows you to identify opportunities for continuous improvement, ensuring that the ETL process is always efficient and effective.
+## Problem and requirements
 
-The video below, in Portuguese, provides a summary of the proposed solution for the project.
+Operational data frequently arrives from several systems and in different file formats. Even when files contain similar fields, ingesting each source separately increases manual work and the risk of inconsistent transformations.
 
-<br>
+For this example, records contain **name, height and weight** fields. The goal is to read the available files, harmonize their structure and measurement units, and write a single CSV suitable for subsequent analysis or database ingestion.
+
+The workflow should:
+
+- read files in CSV, JSON and XML formats;
+- combine compatible records in a standardized tabular structure;
+- apply explicit transformation rules to measurement units;
+- save a unified dataset and record execution events in a log file.
+
+## Architecture and data flow
+
+```text
+CSV files ─┐
+JSON files ├──► EXTRACT ──► TRANSFORM ──► LOAD ──► transformed_data.csv
+XML files ─┘       │             │          │
+                   └─────────────┴──────────┴──► log_file.txt
+```
+
+**Extract.** Python discovers and reads source files. `pandas` handles tabular data and `ElementTree` can parse XML records.
+
+**Transform.** Records are combined into a consistent table. The example includes conversion of height from **inches to meters** and weight from **pounds to kilograms**, according to the source units. Verify that each input uses those units before applying a conversion.
+
+**Load.** The transformed dataset is written to `transformed_data.csv`, while `log_file.txt` records execution events and supports troubleshooting.
+
+## Implementation choices
+
+The project uses widely available Python tools rather than adding unnecessary infrastructure:
+
+| Component | Role |
+|---|---|
+| `glob` | Discover files matching expected patterns |
+| `pandas` | Combine and transform structured records |
+| `xml.etree.ElementTree` | Read XML input |
+| `datetime` | Add timestamps to execution logs |
+| CSV output | Create a reusable dataset |
+
+The main design trade-off is simplicity versus extensibility. This solution fits a controlled set of sample input files; it would need stronger schemas, error handling and orchestration for a production workload.
+
+## Demo
+
+The original walkthrough is available below (video in Portuguese):
 
 {{< youtube mzjJOHLFCJM >}}
 
-<br>
+## Validation and testing
 
+For a reliable ETL pipeline, quality checks should cover more than whether an output file exists. The following is a **recommended validation checklist**, not a claim that an automated test suite has already been implemented:
 
-We can imagine other scenarios where a company receives daily sales, stock and customer feedback reports in different formats. In order to optimise analysis and reporting, it is essential to consolidate all this information into a single CSV file.
+- Confirm that CSV, JSON and XML readers return the expected fields.
+- Check that records have consistent field types after transformation.
+- Validate unit conversions with known examples (e.g., 70 inches = 1.778 meters; 150 pounds ≈ 68.04 kg).
+- Compare input and output record counts, accounting for intentional exclusions.
+- Check behavior for empty files, missing columns and invalid values.
+- Confirm that the log records start, completion and failure events.
 
-In short, data aggregation is a critical process for transforming scattered information into useful knowledge. By automating and optimising this process, organisations can extract maximum value from their data and drive growth and competitiveness.
+A future iteration could add `pytest`, schema validation and CI checks before publishing new outputs.
 
-#### Project repository
+## Results and limitations
 
-https://github.com/diogo-dantas/ETL-simplificado-CSV-JSON-e-XML-
+The described implementation produces a **unified CSV file** and an **execution log**, reducing the need to manually open each source format before analysis. No runtime benchmark, throughput measurement or percentage reduction in effort has been reported for this demonstration.
 
-<a href="http://www.freepik.com">Designed by gstudioimagen / Freepik</a>
+Key limitations include limited input schemas, absence of a documented automated test suite and no orchestration or monitoring layer. These are opportunities for future development, not capabilities already demonstrated.
+
+## Lessons learned and next steps
+
+Even small ETL tasks benefit from clear transformation rules, auditable outputs and reproducible processing. A natural progression toward production-grade Data Engineering would be to add automated testing, configuration management, structured logging and scheduled execution.
+
+## Repository and references
+
+**[View the source repository on GitHub](https://github.com/diogo-dantas/ETL-simplificado-CSV-JSON-e-XML-)**
+
+Cover illustration credit: [gstudioimagen / Freepik](https://www.freepik.com/).

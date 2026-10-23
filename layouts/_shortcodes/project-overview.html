@@ -1,0 +1,23 @@
+{{- $title := .Get "title" | default "Project Overview" -}}
+{{- $domain := .Get "domain" -}}
+{{- $stack := .Get "stack" -}}
+{{- $focus := .Get "focus" -}}
+{{- $outputs := .Get "outputs" -}}
+{{- $status := .Get "status" -}}
+{{- $repo := .Get "repo" -}}
+<section class="dd-project-overview" aria-label="{{ $title }}">
+  <div class="dd-project-overview__heading">
+    <span class="dd-project-overview__eyebrow">CASE STUDY</span>
+    <h2>{{ $title }}</h2>
+  </div>
+  <dl class="dd-project-overview__grid">
+    {{- with $domain }}<div><dt>Domain / Domínio</dt><dd>{{ . }}</dd></div>{{ end -}}
+    {{- with $stack }}<div><dt>Tech Stack</dt><dd>{{ . }}</dd></div>{{ end -}}
+    {{- with $focus }}<div><dt>Focus / Foco</dt><dd>{{ . }}</dd></div>{{ end -}}
+    {{- with $outputs }}<div><dt>Deliverables / Entregáveis</dt><dd>{{ . }}</dd></div>{{ end -}}
+    {{- with $status }}<div><dt>Status</dt><dd>{{ . }}</dd></div>{{ end -}}
+  </dl>
+  {{- with $repo }}
+    <p class="dd-project-overview__action"><a href="{{ . | safeURL }}" target="_blank" rel="noopener noreferrer">GitHub · Source Code / Código-fonte ↗</a></p>
+  {{- end }}
+</section>
