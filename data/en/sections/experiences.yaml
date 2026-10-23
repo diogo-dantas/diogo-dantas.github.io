@@ -1,72 +1,69 @@
-# section information
+# Professional experience (EN) — Hugo Toha
 section:
-  name: Professional background
+  name: Professional Experience
   id: experiences
   enable: true
   weight: 3
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true 
 
-# Your experiences
 experiences:
-- company:
-    name: Gi Group 
-    url: "https://br.gigroup.com/"
-    location: São Bernardo do Campo - SP
-    logo: /images/sections/experiences/Gigroup.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company1.jpg
-    # company overview
-    overview: Resident service provider at Volkswagen.
-  positions:
-  - designation: Controller
-    start: Jul 2013
-    end: Aug 2024
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
-    responsibilities:
-    - I structured unstructured databases for financial analysis, with SQL queries (for data cleaning and cross-checking) and extractions via SAP HANA IDE, ensuring accuracy and strategic insights.
-    - Performed exploratory analysis using Pandas, Matplotlib and Seaborn in a Jupyter environment, validating operational data integrity (employee data, meals) with a focus on consistency, detection of outliers and hidden patterns, generating interactive visualizations and interpretable reports to identify cost/operational optimization opportunities. 
-    - I critically analyzed vehicle occupancy data, linking route, shift and cost information to suggest optimizations in line with operations. I used table queries to propose reallocating employees between shifts, resulting in 30% fewer trips/day.
-    - Documented and presented savings proposals through reports, Business Cases in Excel and PowerPoint presentations, ensuring buy-in from the operational team.
-    - Extracted restaurant access and meal volume data via SQL (Graphical User Interface), creating scripts to consolidate occupancy and cost KPIs, which enabled the reduction of 2 restaurants.
-    - I developed dashboards in Excel and Power Bi to monitor fixed/variable food and transportation costs, with alerts for deviations, generating precision in planning and annual budget savings.
-    -  I critically analyzed employee flow data x menu information, identifying volumes and presenting data to the Purchasing sector to renegotiate incidences and save on contracts.
-    - Collaborated with cross-functional teams to meet administrative and operational demands.
-    - Use of advanced tools in the Office package, Power BI (DAX, Power Query), SAP, Senior and K-SRM (general ABAP purchasing system).
-  
-- company:
-    name: Alditel Gestão Econômica em Telecomunicações 
-    url: "https://www.aitivus.com.br/"
-    location: São Bernardo do Campo - SP
-    logo: /images/sections/experiences/alditel.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company2.jpg
-    overview: Personalised support for clients such as Cimpor, JSL Logística and Intercement. 
-  positions:
-  - designation: Administrative assistant
-    start: Jun 2011
-    end: Jun 2013
-    responsibilities:
-    - Assisted in gathering information from users for the development of telecom systems.
-    - Assisted in the implementation and maintenance of systems, as a focal point for clients. Preparing tests, analyzing technical problems and proposing solutions.
-    - I input costs and managed telecom assets, ensuring the optimization of resources and efficient control of investments.
-    - I prepared detailed management reports and dashboards to provide actionable insights to leadership and support strategic decision-making.
+  # Current role. IMPORTANT: fill in the actual joining month/year before publishing.
+  - company:
+      name: IQVIA
+      url: "https://www.iqvia.com/"
+      location: "São Paulo, Brazil"
+      logo: /images/sections/experiences/healthcare-data-mark.svg
+      overview: "Healthcare and life sciences research, analytics and consulting."
+    positions:
+      - designation: "Data Processing Analyst"
+        start: " Jun 2026" 
+        # No end date: Toha displays 'Present'.
+        responsibilities:
+          - "Process, clean, validate and structure healthcare market research datasets with Python, SQL, SPSS and Excel, ensuring consistent analytical inputs and outputs."
+          - "Apply descriptive and inferential statistics, including Z-tests, t-tests, ANOVA and multiple-comparison procedures such as Tukey and Bonferroni, to support quantitative interpretation."
+          - "Develop Python-based processing workflows for data transformation, cross-tabulation and standardized reporting, improving reproducibility and reducing manual work."
+          - "Prepare analytical tables and survey metrics, including NPS, scorecards, Gabor-Granger and BIP, to support market research deliverables."
+          - "Develop dashboards and analytical reports in Power BI and Excel to communicate findings and support data-driven decisions."
 
-- company:
-    name: Banco do Brasil
-    url: "https://www.bb.com.br"
-    location: São Paulo - SP
-    logo: /images/sections/experiences/bb.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company3.jpg
-    overview: Internship in the Banco do Brasil building (Historic Centre of SP).
-  positions:
-  - designation: Accounting intern
-    start: Feb 2010
-    end: Dec 2010
-    responsibilities:
-    - Preparation of statistical calculations, invoicing, identification of document batches, customer support, telephone support for agencies and preparation of control tables.
-    - Logistics for ATM service and maintenance.
+  - company:
+      name: "Gi Group"
+      url: "https://br.gigroup.com/"
+      location: "São Bernardo do Campo, São Paulo, Brazil"
+      logo: /images/sections/experiences/Gigroup.png
+      overview: "Assigned to Volkswagen do Brasil, supporting financial and operational analysis for transportation and food services."
+    positions:
+      - designation: "Operations & Financial Controller"
+        start: "Jul 2013"
+        end: "Aug 2024"
+        responsibilities:
+          - "Structured and reconciled operational and financial data using SQL and SAP HANA, improving the reliability of cost analysis and reporting."
+          - "Built Excel and Power BI dashboards to monitor transportation and food-service costs, operational KPIs and budget deviations."
+          - "Analyzed vehicle occupancy, routes, shifts and costs to recommend operational improvements that resulted in 30% fewer daily trips."
+          - "Produced financial analyses and business cases to support cost optimization, contract discussions and cross-functional decisions."
+
+  - company:
+      name: "Alditel Gestão Econômica em Telecomunicações"
+      url: "https://www.aitivus.com.br/"
+      location: "São Bernardo do Campo, São Paulo, Brazil"
+      logo: /images/sections/experiences/alditel.png
+      overview: "On-site client support and operational reporting for telecommunications management."
+    positions:
+      - designation: "Administrative Assistant"
+        start: "Jun 2011"
+        end: "Jun 2013"
+        responsibilities:
+          - "Supported requirements gathering, system implementation, testing and issue resolution for client-facing telecommunications services."
+          - "Maintained telecom asset and cost information, producing management reports that supported operational control and decision-making."
+
+  - company:
+      name: "Banco do Brasil"
+      url: "https://www.bb.com.br/"
+      location: "São Paulo, Brazil"
+      logo: /images/sections/experiences/bb.png
+      overview: "Accounting and operations internship."
+    positions:
+      - designation: "Accounting Intern"
+        start: "Feb 2010"
+        end: "Dec 2010"
+        responsibilities:
+          - "Supported statistical calculations, invoice controls, operational reporting and administrative processes."

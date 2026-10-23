@@ -1,0 +1,48 @@
+{{- $sectionID := .section.id | default "about" -}}
+<section class="container anchor p-lg-5 portfolio-about" id="{{ $sectionID }}" aria-label="{{ .section.name }}">
+  <div class="row portfolio-about__row">
+    <div class="col-12 col-lg-6 portfolio-about__intro">
+      <h2 class="portfolio-about__name">Diogo Dantas</h2>
+      {{ with .summary }}
+      <div class="portfolio-about__summary">{{ . | markdownify }}</div>
+      {{ end }}
+
+      {{ with .socialLinks }}
+      <nav class="portfolio-about__social" aria-label="Social profiles">
+        {{ range . }}
+          <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" title="{{ .name }}" {{ if hasPrefix .url "https://" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+            <i class="{{ .icon }}" aria-hidden="true"></i>
+          </a>
+        {{ end }}
+      </nav>
+      {{ end }}
+
+      {{ with .resourceLinks }}
+      <div class="portfolio-about__resources">
+        {{ range . }}
+        <a class="portfolio-about__resume" href="{{ .url | relURL }}" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i> {{ .title }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <aside class="col-12 col-lg-6 portfolio-about__focus" aria-label="{{ .focusTitle }}">
+      <div class="portfolio-about__focus-heading">
+        <h3>{{ .focusTitle }}</h3>
+        {{ with .focusSubtitle }}<p>{{ . }}</p>{{ end }}
+      </div>
+      <div class="portfolio-about__focus-grid">
+        {{ range .focusAreas }}
+        <article class="portfolio-about__focus-card">
+          <span class="portfolio-about__focus-icon" aria-hidden="true"><i class="{{ .icon }}"></i></span>
+          <h4>{{ .title }}</h4>
+          <p>{{ .description }}</p>
+          {{ with .label }}<span class="portfolio-about__tag">{{ . }}</span>{{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </aside>
+  </div>
+</section>

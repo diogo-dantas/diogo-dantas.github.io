@@ -5,7 +5,7 @@ section:
   enable: true
   weight: 1
   showOnNavbar: true
-  template: sections/about.html
+  template: sections/about-core-focus.html
 
 # your designation
 designation: 
@@ -55,69 +55,20 @@ resourceLinks:
 # Show your badges
 # You can show your verifiable certificates from https:/www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
-badges:
-- #type: certification
-  #name: Certified Associate Data Engineer in SQL
-  #url: "/images/badge.png"
-  #link: "https://www.datacamp.com/completed/statement-of-accomplishment/track/f642b2c4078e7ddf8f7aeb8a3a4ff68487c964c2"
-
-- #type: certification
-  #name: Java com orientação a objetos
-  #url: "https://cursos.alura.com.br/degree/certificate/4ccfdd86-5975-4ec1-bde3-5d526881112d?lang"
-  #badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
-
-- #type: certification
-  #name: Python for Data Science, AI & Development
-  #url: "https://coursera.org/share/09c4941f33ef3846a41db68abcfa3023"
-  #badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-
-- type: soft-skill-indicator
-  name: Trabalho em equipe
-  percentage: 95
-  color: "#5A71B5"
-
-#- type: soft-skill-indicator
-  #name: Liderança
-  #percentage: 65
-  #color: "#858DA6"
-
-- type: soft-skill-indicator
-  name: Raciocínio Lógico
-  percentage: 80
-  color: "#7997F2"
-
-- type: soft-skill-indicator
-  name: Pensamento Anallítico
-  percentage: 85
-  color: "#5C6273"
-
-- type: soft-skill-indicator
-  name: Adaptabilidade
-  percentage: 95
-  color: "#7997F2"
-
-- type: soft-skill-indicator
-  name: Resolução de Problemas
-  percentage: 80
-  color: "#5C6273"
-
-#- type: soft-skill-indicator
-  #name: Inteligência Emocional	
-  #percentage: 75
-  #color: "#5A71B5"
-
-- type: soft-skill-indicator
-  name: Gestão do tempo
-  percentage: 95
-  color: "#858DA6"
-
-#- type: soft-skill-indicator
-  #name: Comunicação eficaz
-  #percentage: 85
-  #color: "#7997F2"
-
-# you can also provide color code instead of the color name
-# - type: soft-skill-indicator
-#   name: Example 1
-#   percentage: 75
-#   color: "#00adb5"
+badges: []
+focusTitle: Áreas de atuação
+focusSubtitle: Experiência aplicada e direção da minha especialização.
+focusAreas:
+- title: Analytics em Saúde
+  description: Pesquisas de mercado, testes estatísticos e insights quantitativos.
+  icon: fas fa-heartbeat
+- title: Engenharia de Dados
+  description: Preparação, transformação, validação e pipelines de dados.
+  icon: fas fa-database
+- title: Automação de Processos
+  description: Rotinas Python, processamento reprodutível e verificações de qualidade.
+  icon: fas fa-code-branch
+- title: ML Engineering & MLOps
+  description: 'Em especialização: ciclo de vida, implantação e operação de modelos.'
+  icon: fas fa-brain
+  label: Em especialização

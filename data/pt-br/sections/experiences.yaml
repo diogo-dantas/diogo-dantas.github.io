@@ -1,72 +1,69 @@
-# section information
+# Experiência profissional (PT-BR) — Hugo Toha
 section:
-  name: Histórico Profissional
+  name: Experiência Profissional
   id: experiences
   enable: true
   weight: 3
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true 
 
-# Your experiences
 experiences:
-- company:
-    name: Gi Group 
-    url: "https://br.gigroup.com/"
-    location: São Bernardo do Campo - SP
-    logo: /images/sections/experiences/Gigroup.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company1.jpg
-    # company overview
-    overview: Prestador de serviços residente na empresa Volkswagen do Brasil (Planta Anchieta). 
-  positions:
-  - designation: Controlador de Transporte e Alimentação
-    start: Jul 2013
-    end: Ago 2024
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
-    responsibilities:
-      - Estruturei bases de dados desestruturados para análises financeiras, com consultas SQL (para limpeza e cruzamento de dados) e extrações via SAP HANA IDE , garantindo precisão e insights estratégicos.
-      - Realizei análises exploratórias utilizando Pandas, Matplotlib e Seaborn em ambiente Jupyter, validando integridade de dados operacionais (dados de empregados, refeições) com foco em consistência, detecção de outliers e padrões ocultos, gerando visualizações interativas e relatórios interpretáveis para identificar oportunidades de otimização de custo/operacional. 
-      - Analisei criticamente dados de ocupação de veículos, relacionando informações de rotas, turnos e custos para sugerir otimizações alinhadas com o operacional. Utilizei consultas entre tabelas para propor realocação de empregados entre turnos, resultando em 30% menos viagens/dia.
-      - Documentei e apresentei propostas de economia através de relatórios, Business Cases em Excel e apresentações em PowerPoint, garantindo adesão da equipe operacional.
-      - Extração de dados de acesso a restaurantes e volume de refeições via SQL (Interface Gráfica do Usuário), criando scripts para consolidar KPIs de ocupação e custos, o que permitiu a redução de 2 restaurantes.
-      - Desenvolvi dashboards em Excel e Power Bi para monitorar custos fixos/variáveis de alimentação e transporte, com alertas para desvios, gerando precisão no planejamento e economia anual do budget.
-      - Analisei criticamente dados de fluxo de empregados x informações dos cardápios, identificando volumes e apresentando dados ao setor de Compras para renegociação de incidências e economia com contrato.
-      - Colaborei com equipes multifuncionais para atender às demandas administrativas e operacionais.
-      - Utilização de ferramentas avançadas do pacote Office, Power BI (DAX, Power Query), SAP, Senior e K-SRM (sistema geral de compras ABAP).
+  # Cargo atual. IMPORTANTE: inserir mês/ano reais de admissão antes de publicar.
+  - company:
+      name: IQVIA
+      url: "https://www.iqvia.com/"
+      location: "Brasil"
+      logo: /images/sections/experiences/healthcare-data-mark.svg
+      overview: "Pesquisas, análises e consultoria para os setores de saúde e ciências da vida."
+    positions:
+      - designation: "Analista de Processamento de Dados"
+        start: "Jun 2026" 
+        # Sem a propriedade end: o Toha mostra 'Presente'.
+        responsibilities:
+          - "Processo, limpo, valido e estruturo bases de pesquisas de mercado em saúde com Python, SQL, SPSS e Excel, assegurando consistência das entradas e saídas analíticas."
+          - "Aplico análises descritivas e inferenciais, incluindo testes Z, t-Student, ANOVA e procedimentos de comparação múltipla como Tukey e Bonferroni."
+          - "Desenvolvo rotinas de processamento em Python para transformação de dados, cruzamentos estatísticos e padronização de relatórios, aumentando a reprodutibilidade e reduzindo etapas manuais."
+          - "Elaboro tabelas analíticas e indicadores de pesquisas, como NPS, scorecards, Gabor-Granger e BIP, para apoiar entregas de estudos de mercado."
+          - "Desenvolvo dashboards e relatórios analíticos em Power BI e Excel para comunicar resultados e apoiar decisões orientadas por dados."
 
-- company:
-    name: Alditel Gestão Econômica em Telecomunicações 
-    url: "https://www.aitivus.com.br/"
-    location: São Bernardo do Campo - SP
-    logo: /images/sections/experiences/alditel.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company2.jpg
-    overview: Suporte presencial a clientes como Cimpor, JSL Logística e Intercement. 
-  positions:
-  - designation: Assistente administrativo
-    start: Jun 2011
-    end: Jun 2013
-    responsibilities:
-      - Auxiliava no levantamento de informações junto aos usuários para o desenvolvimento de sistemas de telecom.
-      - Auxiliava na implantação e manutenção de sistemas, como ponto focal de clientes. Preparando testes, analisando problemas técnicos e propondo soluções.
-      - Efetuei o input de custos e a gestão dos ativos de telecom, assegurando a otimização dos recursos e o controle eficiente dos investimentos.
-      - Preparei relatórios de gestão detalhados e dashboards para fornecer insights acionáveis à liderança e apoiar a tomada de decisões estratégicas.
+  - company:
+      name: "Gi Group"
+      url: "https://br.gigroup.com/"
+      location: "São Bernardo do Campo, São Paulo, Brasil"
+      logo: /images/sections/experiences/Gigroup.png
+      overview: "Atuação alocada na Volkswagen do Brasil, com análises financeiras e operacionais de transporte e alimentação."
+    positions:
+      - designation: "Controlador de Transporte e Alimentação"
+        start: "Jul 2013"
+        end: "Ago 2024"
+        responsibilities:
+          - "Estruturei e conciliei dados operacionais e financeiros com SQL e SAP HANA, aumentando a confiabilidade das análises de custos e dos relatórios."
+          - "Desenvolvi dashboards em Excel e Power BI para acompanhar custos de transporte e alimentação, indicadores operacionais e desvios orçamentários."
+          - "Analisei ocupação de veículos, rotas, turnos e custos, propondo melhorias operacionais que resultaram em 30% menos viagens por dia."
+          - "Preparei análises financeiras e business cases para apoiar iniciativas de redução de custos, negociações contratuais e decisões entre áreas."
 
-- company:
-    name: Banco do Brasil
-    url: "https://www.bb.com.br"
-    location: São Paulo - SP
-    logo: /images/sections/experiences/bb.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company3.jpg
-    overview: Estágio no Edifício do Banco do Brasil (Centro Histórico de SP).
-  positions:
-  - designation: Estagiário de contabilidade
-    start: Fev 2010
-    end: Dez 2010
-    responsibilities:
-      - Elaboração de cálculos estatísticos cálculo de faturas, identificação de lotes de documentos, suporte a clientes, suporte telefônico para agências e elaboração de tabelas de controle.
-      - Logística para atendimento e manutenção de caixas eletrônicos.
+  - company:
+      name: "Alditel Gestão Econômica em Telecomunicações"
+      url: "https://www.aitivus.com.br/"
+      location: "São Bernardo do Campo, São Paulo, Brasil"
+      logo: /images/sections/experiences/alditel.png
+      overview: "Atendimento a clientes e relatórios operacionais para gestão de telecomunicações."
+    positions:
+      - designation: "Assistente Administrativo"
+        start: "Jun 2011"
+        end: "Jun 2013"
+        responsibilities:
+          - "Apoiei levantamento de requisitos, implantação, testes e resolução de problemas em sistemas e serviços de telecomunicações para clientes."
+          - "Mantive registros de ativos e custos de telecomunicações e produzi relatórios gerenciais para apoiar o controle operacional e a tomada de decisão."
+
+  - company:
+      name: "Banco do Brasil"
+      url: "https://www.bb.com.br/"
+      location: "São Paulo, Brasil"
+      logo: /images/sections/experiences/bb.png
+      overview: "Estágio em contabilidade e operações."
+    positions:
+      - designation: "Estagiário de Contabilidade"
+        start: "Fev 2010"
+        end: "Dez 2010"
+        responsibilities:
+          - "Apoiei cálculos estatísticos, controles de faturamento, relatórios operacionais e processos administrativos."

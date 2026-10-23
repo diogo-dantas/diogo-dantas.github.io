@@ -1,4 +1,3 @@
-# section information
 section:
   name: Skills
   id: skills
@@ -6,69 +5,71 @@ section:
   weight: 2
   showOnNavbar: true
   filter: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
-# filter buttons
 buttons:
 - name: Todos
   filter: "todos"
-- name: Ferramentas
-  filter: "ferramentas"
-- name: Linguagens
-  filter: "linguagens"
-  #name: Container
-  #filter: "container"
-- name: Outros  
-  filter: "outros"
+- name: Programação
+  filter: "programacao"
+- name: Engenharia de Dados
+  filter: "engenharia-dados"
+- name: Analytics & BI
+  filter: "analytics-bi"
+- name: Estatística
+  filter: "estatistica"
+- name: Cloud & Plataforma
+  filter: "cloud-plataforma"
 
-# Your Skills.
-# Give a summary of you each skill in the summary section.
 skills:
-- name: SQL
-  logo: /images/sections/skills/SQL.png
-  summary: "Consultas Básicas e Avançadas (*CTEs, Windows Functions, Subqueries, Queries aninhadas e correlacionadas*).<br> Manipulação de dados, definição e manipulação de esquemas.<br>"
-  categories: ["todos", "linguagens"]
-  #url: "https://kubernetes.io/"
-
-  #name: Go Development
-  #logo: /images/sections/skills/go.png
-  #summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  #categories: ["basic", "language"]
-  #url: "https://golang.org/"
-
-  #name: Cloud Computing
-  #logo: /images/sections/skills/cloud.png
-  #summary: "GCP, AWS, Azure."
-  #categories: ["others"]
-
 - name: Python
   logo: /images/sections/skills/python.png
-  summary: "Pandas, Numpy, Matplotlib, Seaborn, BeautifulSoup, requests, Jupyter <br>Frameworks: Django, Scrapy, pytest"
-  categories: ["todos", "linguagens"]
+  summary: "Processamento de dados, automação e fluxos analíticos com Pandas, NumPy, requests e Jupyter. Experiência com scripts, rotinas de ETL, web scraping e bibliotecas de apoio ao desenvolvimento, como pytest e Django."
+  categories: ["todos", "programacao", "engenharia-dados"]
   url: "https://docs.python.org/3/"
 
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experiência com desenvolvimento baseado em git. Principalmente, o Github."
-  categories: ["todos", "ferramentas"]
-  url: "https://git-scm.com/"
-
-- name: Office
-  logo: "/images/sections/skills/office.png"
-  summary: "Destaque para habilidade avançada em Excel, com expertise em fórmulas matriciais e análise de dados. Criação de apresentações em PowerPoint, com visualizações dinâmicas e personalizadas entre outros recursos do pacote."
-  categories: ["todos", "ferramentas"]
-  url: "https://www.microsoft.com/pt-br/microsoft-365/products-apps-services"
+- name: SQL
+  logo: /images/sections/skills/SQL.png
+  summary: "Consultas avançadas com CTEs, window functions, subqueries e transformações de dados. Experiência com validação, joins, agregações e consultas analíticas para contextos de negócio e operação."
+  categories: ["todos", "programacao", "engenharia-dados", "analytics-bi"]
 
 - name: Power BI
-  logo: "/images/sections/skills/power-bi.png" 
-  summary: "Criação de relatórios e dashboards interativos, ETL em Power Query, Modelagem dos dados, DAX."
-  categories: ["todos", "ferramentas"]
+  logo: /images/sections/skills/power-bi.png
+  summary: "Dashboards interativos, modelagem de dados, DAX e Power Query para reporting e apoio à decisão. Experiência na construção de visões analíticas, KPIs e storytelling visual."
+  categories: ["todos", "analytics-bi"]
 
-  
-  #name: C++
-  #logo: /images/sections/skills/c++.png
-  #summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  #categories: ["basic", "language"]
+- name: Excel
+  logo: /images/sections/skills/excel.png
+  summary: "Excel avançado para análise, reporting e suporte a processos, incluindo fórmulas, validação, organização de bases e relatórios gerenciais."
+  categories: ["todos", "analytics-bi"]
+  url: "https://www.microsoft.com/pt-br/microsoft-365/excel"
 
+- name: Análise Estatística
+  logo: /images/sections/skills/stats.png
+  summary: "Análises descritivas e inferenciais aplicadas a pesquisas de mercado e estudos na área da saúde, incluindo testes de significância como Z, t-Student, ANOVA, Tukey e Bonferroni, além de metodologias como NPS e Gabor-Granger."
+  categories: ["todos", "estatistica"]
 
+- name: SPSS
+  logo: /images/sections/skills/spss.png
+  summary: "Experiência com processamento e tabulação de dados de pesquisa, incluindo transformações, agregações, cruzamentos e geração de saídas estatísticas para entregas analíticas."
+  categories: ["todos", "estatistica", "analytics-bi"]
+
+- name: Git & GitHub
+  logo: /images/sections/skills/git.png
+  summary: "Controle de versão para portfólio e projetos de desenvolvimento, incluindo gerenciamento de repositórios, commits, branches e fluxos de publicação no GitHub."
+  categories: ["todos", "cloud-plataforma"]
+  url: "https://git-scm.com/"
+
+- name: Pipelines de Dados & Automação
+  logo: /images/sections/skills/python.png
+  summary: "Desenho de fluxos automatizados para limpeza, transformação, tabulação e geração de relatórios, com foco em reprodutibilidade, qualidade e eficiência operacional."
+  categories: ["todos", "engenharia-dados"]
+
+- name: Cloud & Plataformas de Dados
+  logo: /images/sections/skills/cloud.png
+  summary: "Familiaridade com serviços de dados em AWS e GCP, incluindo BigQuery, Redshift, Athena, Glue e conceitos relacionados a analytics e armazenamento em nuvem."
+  categories: ["todos", "cloud-plataforma"]
+
+- name: Linux / Shell
+  logo: /images/sections/skills/linux.png
+  summary: "Uso básico a intermediário de ambientes Linux e shell scripting para automação de tarefas, manipulação de arquivos e execução de fluxos de trabalho."
+  categories: ["todos", "cloud-plataforma", "engenharia-dados"]

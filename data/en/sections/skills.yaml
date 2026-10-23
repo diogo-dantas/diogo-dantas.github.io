@@ -1,4 +1,3 @@
-# section information
 section:
   name: Skills
   id: skills
@@ -6,61 +5,71 @@ section:
   weight: 2
   showOnNavbar: true
   filter: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
-# filter buttons
 buttons:
 - name: All
   filter: "all"
-- name: Tools
-  filter: "tools"
-- name: Language
-  filter: "language"
-  #name: Container
-  #filter: "container"
-- name: Others
-  filter: "others"
+- name: Programming
+  filter: "programming"
+- name: Data Engineering
+  filter: "data-engineering"
+- name: Analytics & BI
+  filter: "analytics-bi"
+- name: Statistics
+  filter: "statistics"
+- name: Cloud & Platform
+  filter: "cloud-platform"
 
-# Your Skills.
-# Give a summary of you each skill in the summary section.
 skills:
-- name: SQL
-  logo: /images/sections/skills/SQL.png
-  summary: "Basic and advanced queries (*CTEs, Windows Functions, Subqueries, nested and correlated queries*).<br> Data manipulation, schema definition and manipulation.<br>"
-  categories: ["all", "language"]
-  #url: "https://kubernetes.io/"
-
-  #name: Go Development
-  #logo: /images/sections/skills/go.png
-  #summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  #categories: ["basic", "language"]
-  #url: "https://golang.org/"
-
-  #name: Cloud Computing
-  #logo: /images/sections/skills/cloud.png
-  #summary: "GCP, AWS, Azure."
-  #categories: ["others"]
-
 - name: Python
   logo: /images/sections/skills/python.png
-  summary: "Pandas, Numpy, Matplotlib, Seaborn,  BeautifulSoup, requests, Jupyter <br>Frameworks: Django, Scrapy, pytest"
-  categories: ["all", "language"]
+  summary: "Data processing, automation and analytical workflows with Pandas, NumPy, requests and Jupyter. Experience with scripting, ETL routines, web scraping and development support libraries such as pytest and Django."
+  categories: ["all", "programming", "data-engineering"]
   url: "https://docs.python.org/3/"
 
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experience with git-based development. Mainly Github."
-  categories: ["all", "tools"]
-  url: "https://git-scm.com/"
-
-- name: Office
-  logo: "/images/sections/skills/office.png"
-  summary: "Advanced Excel skills, with expertise in matrix formulas and data analysis. Creating PowerPoint presentations, with dynamic and customized views, among other features of the package."
-  categories: ["all", "tools"]
-  url: "https://www.microsoft.com/pt-br/microsoft-365/products-apps-services"
+- name: SQL
+  logo: /images/sections/skills/SQL.png
+  summary: "Advanced querying with CTEs, window functions, subqueries and data transformations. Experience with data validation, joins, aggregations and analytical querying for business and operational use cases."
+  categories: ["all", "programming", "data-engineering", "analytics-bi"]
 
 - name: Power BI
-  logo: "/images/sections/skills/power-bi.png" 
-  summary: "Creation of interactive reports and dashboards, ETL in Power Query, data modeling, DAX."
-  categories: ["all", "tools"]
+  logo: /images/sections/skills/power-bi.png
+  summary: "Interactive dashboards, data modeling, DAX and Power Query for business reporting and decision support. Experience building analytical views, KPIs and visual storytelling."
+  categories: ["all", "analytics-bi"]
+
+- name: Excel
+  logo: /images/sections/skills/excel.png
+  summary: "Advanced Excel for analysis, reporting and process support, including formulas, validation, data organization and management reporting."
+  categories: ["all", "analytics-bi"]
+  url: "https://www.microsoft.com/microsoft-365/excel"
+
+- name: Statistical Analysis
+  logo: /images/sections/skills/stats.png
+  summary: "Descriptive and inferential analysis applied to market research and healthcare studies, including significance testing such as Z-test, t-test, ANOVA, Tukey and Bonferroni, as well as methodologies like NPS and Gabor-Granger."
+  categories: ["all", "statistics"]
+
+- name: SPSS
+  logo: /images/sections/skills/spss.png
+  summary: "Experience with survey data processing and tabulation, including transformations, aggregation, crosstabs and statistical outputs for analytical deliverables."
+  categories: ["all", "statistics", "analytics-bi"]
+
+- name: Git & GitHub
+  logo: /images/sections/skills/git.png
+  summary: "Version control for portfolio and development projects, including repository management, commits, branching and publication workflows with GitHub."
+  categories: ["all", "cloud-platform"]
+  url: "https://git-scm.com/"
+
+- name: Data Pipelines & Automation
+  logo: /images/sections/skills/python.png
+  summary: "Design of automated processing workflows for data cleaning, transformation, tabulation and report generation, with focus on reproducibility, quality and operational efficiency."
+  categories: ["all", "data-engineering"]
+
+- name: Cloud & Data Platforms
+  logo: /images/sections/skills/cloud.png
+  summary: "Familiarity with AWS and GCP data services, including BigQuery, Redshift, Athena, Glue and related cloud-based analytics and storage concepts."
+  categories: ["all", "cloud-platform"]
+
+- name: Linux / Shell
+  logo: /images/sections/skills/linux.png
+  summary: "Basic to intermediate use of Linux environments and shell scripting for task automation, file handling and workflow execution."
+  categories: ["all", "cloud-platform", "data-engineering"]

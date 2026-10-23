@@ -1,77 +1,46 @@
-# section information
 section:
   name: Education
   id: education
-  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  template: sections/education.html
   enable: true
   weight: 4
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
 degrees:
-- name: Degree in Mathematics
-  icon: fa-graduation-cap
-  timeframe: 2022-2026
-  institution:
-    name: Univesp 
-    url: "https://univesp.br/"
-    logo: /images/sections/education/Univesp.png
-  takenCourses: 
-    courses:
-    - name: "Statistics, Analytical Geometry and Linear Algebra, Logic and Discrete Mathematics, Calculus, Physics and General subjects, among others."
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/tech_college.png
-  #grade: #(optional)
-    scale: CGPA
-    achieved: 3.6
-    outOf: 4
-  #publications: #(optional)
-  #- title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  # url: "#"
-- name: Systems Analysis and Development
-  icon: fa-graduation-cap
-  timeframe: 2017-2019
-  institution:
-    name: Unip
-    url: "https://unip.br/"
-    logo: /images/sections/education/unip.png
-  takenCourses: 
-    courses:
-    - name: "Algorithms and Data Structure, Cloud Computing and Devops, Mobile Development, Applied Agile Software Engineering, Object-Oriented Systems Analysis, Database Programming, Mathematics and Statistics, NOSQL Database Modeling, among others."
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/university.jpg
-  #publications: #(optional)
-  #- title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  # url: "#"
-  #extracurricularActivities: #(optional)
-  #- In vitae facilisis est, eget porta sem.
-  #- Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  #- Duis sed massa feugiat, ornare justo et, aliquam est.
-  #- Pellentesque ut fringilla magna.
-  #custonSections: #(optional)
-- name: Data Science - Lato Sensu Specialisation
-  icon: fa-university
-  timeframe: 2020-2021
-  institution:
-    name: Mackenzie
-    url: "https://www.mackenzie.br/"
-    logo: /images/sections/education/mackenzie.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/science_college.png
-  takenCourses: 
-    courses:
-    - name: "Big Data Architecture, Data Collection and Storage, Big Data Processing, Statistical Analysis, Data Visualization, Data Mining and Analysis."
+  - name: "Mathematics Degree (Brazilian Teaching Licensure) — Completed"
+    icon: fa-graduation-cap
+    timeframe: "2022–2026"
+    institution:
+      name: "UNIVESP — Virtual University of the State of São Paulo"
+      url: "https://univesp.br/"
+      logo: /images/sections/education/Univesp.png
+    takenCourses:
+      courses:
+        - name: "Statistics, analytical geometry and linear algebra."
+        - name: "Calculus, logic and discrete mathematics."
+        - name: "Mathematical reasoning and quantitative methods."
 
+  - name: "Postgraduate Specialization (Lato Sensu) in Data Science"
+    icon: fa-university
+    timeframe: "2020–2021"
+    institution:
+      name: "Mackenzie Presbyterian University"
+      url: "https://www.mackenzie.br/"
+      logo: /images/sections/education/mackenzie.png
+    takenCourses:
+      courses:
+        - name: "Big Data architecture, collection, storage and processing."
+        - name: "Statistical analysis, data mining and data visualization."
 
-- name: Bachelor of Accounting Sciences
-  icon: fa-graduation-cap
-  timeframe: 2012-2015
-  institution:
-    name: Anhanguera
-    url: "https://www.anhanguera.com/"
-    logo: /images/sections/education/anhanguera.png
-  takenCourses: 
-    courses:
-    - name: "Cost Analysis, Financial Mathematics, Financial Planning and Budgeting, Cost and Industrial Accounting, Tax Accounting and Tax Planning, Working Capital and Financial Analysis, among others. Enrolment locked in 3rd year."
-
+  - name: "Degree in Systems Analysis and Development"
+    icon: fa-graduation-cap
+    timeframe: "2017–2019"
+    institution:
+      name: "Universidade Paulista (UNIP)"
+      url: "https://www.unip.br/"
+      logo: /images/sections/education/unip.png
+    takenCourses:
+      courses:
+        - name: "Algorithms, data structures and object-oriented systems analysis."
+        - name: "Database programming, NoSQL modeling and cloud/DevOps fundamentals."
+        - name: "Software engineering, mathematics and statistics."

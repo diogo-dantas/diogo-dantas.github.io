@@ -5,29 +5,20 @@ section:
   enable: true
   weight: 1
   showOnNavbar: true
-  template: sections/about.html
+  template: sections/about-core-focus.html
 
-# your designation
-designation: 
-# your company information
+designation:
 company:
   #name: Example Co.
   #url: "https://www.example.com"
 
-# your resume. this file path should be relative to you "static" directory
-# Dreprecated. Use resourceLinks instead.
-# resume: "files/resume.pdf"
-
-# a summary about you
 summary: >-
   Data professional with experience in healthcare market research, statistical analysis and workflow automation. I use Python, SQL, SPSS, Excel and Power BI to clean, validate, transform and analyze datasets, apply statistical methods, and build automated processing workflows. My background also includes financial and operational analytics, cost optimization and data-driven decision-making. I am expanding my expertise in end-to-end Machine Learning Engineering and MLOps, focusing on reproducible pipelines, model deployment and reliable production systems.
 
-# your social links
-# give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "diogo.dantas@live.com"
+  url: "mailto:diogo.dantas@live.com"
 
 - name: Github
   icon: "fab fa-github"
@@ -41,82 +32,26 @@ socialLinks:
   icon: "fab fa-hackerrank"
   url: "https://www.hackerrank.com/diogo_dantas2088"
 
-  #name: Medium
-  #icon: "fab fa-medium"
-  #url: "https://medium.com/@diogodantas_"
-
-# You can put custom buttons to link your relevant resources.
-# For example, you can put link for your resume.
-
 resourceLinks:
 - title: "My resume"
   url: "files/my_resume.pdf"
 
-# Show your badges
-# You can show your verifiable certificates from https:/www.credly.com.
-# You can also show a circular bar indicating the level of expertise on a certain skill
-badges:
-- #type: certification
-  #name: Certified Associate Data Engineer in SQL
-  #url: "https://www.datacamp.com/completed/statement-of-accomplishment/track/f642b2c4078e7ddf8f7aeb8a3a4ff68487c964c2"
-  #image: "images/badge.png
+# I recommend leaving badges empty for now instead of showing subjective soft-skill percentages.
+badges: []
 
-- #type: certification
-  #name: Java com orientação a objetos
-  #url: "https://cursos.alura.com.br/degree/certificate/4ccfdd86-5975-4ec1-bde3-5d526881112d?lang"
-  #badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
-
-- #type: certification
-  #name: Python for Data Science, AI & Development
-  #url: "https://coursera.org/share/09c4941f33ef3846a41db68abcfa3023"
-  #badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-
-- type: soft-skill-indicator
-  name: Team Work
-  percentage: 95
-  color: "#5A71B5"
-
-#- type: soft-skill-indicator
-  #name: Leadership
-  #percentage: 65
-  #color: "#858DA6"
-
-- type: soft-skill-indicator
-  name: Logical Reasoning
-  percentage: 80
-  color: "#7997F2"
-
-- type: soft-skill-indicator
-  name: Analytical Thinking
-  percentage: 85
-  color: "#5C6273"
-
-- type: soft-skill-indicator
-  name: Adaptability
-  percentage: 95
-  color: "#7997F2"
-
-- type: soft-skill-indicator
-  name: Troubleshooting
-  percentage: 80
-  color: "#5C6273"
-
-#- type: soft-skill-indicator
-  #name: Emotional Intelligence	
-  #percentage: 75
-  #color: "#5A71B5"
-
-- type: soft-skill-indicator
-  name: Time Management
-  percentage: 95
-  color: "#858DA6"
-
-#- type: soft-skill-indicator
-  #name: Effective communication
-  #percentage: 85
-  #color: "#7997F2"
-# you can also provide color code instead of the color name
-# - type: soft-skill-indicator
-#   name: Example 1
-#   percentage: 75
-#   color: "#00adb5"
+focusTitle: Core Focus
+focusSubtitle: Where I apply my experience — and where I am specializing.
+focusAreas:
+- title: Healthcare Analytics
+  description: Market research, statistical testing and analytical insights.
+  icon: fas fa-heartbeat
+- title: Data Engineering
+  description: Data preparation, transformation, validation and pipelines.
+  icon: fas fa-database
+- title: Workflow Automation
+  description: Python routines, repeatable processing and quality checks.
+  icon: fas fa-code-branch
+- title: ML Engineering & MLOps
+  description: 'Current specialization: model lifecycle, deployment and operations.'
+  icon: fas fa-brain
+  label: Learning & building

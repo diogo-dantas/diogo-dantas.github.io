@@ -1,17 +1,10 @@
-# some information about you
-name: "Diogo Dantas"
-nickname: "Diogo."
-# greeting message before your name. it will default to "Hi! I am" if not provided
-greeting: "Olá! Eu sou o "
-image: "images/author/diogo2.png"
-# give your some contact information. they will be used in the footer
+name: Diogo Dantas
+nickname: Diogo.
+greeting: 'Olá! Eu sou o '
+image: images/author/diogo2.png
 contactInfo:
-  email: "diogo.dantas@live.com"
+  email: diogo.dantas@live.com
   github: diogo-dantas
   linkedin: diogodantasp
-  
-
-# some summary about what you do
 summary:
-  - "Engenharia de Dados. Evoluindo para ML em produção."
-
+- Engenharia de dados e automação. Foco em Machine Learning e MLOps.

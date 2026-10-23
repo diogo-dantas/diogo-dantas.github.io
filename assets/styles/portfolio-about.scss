@@ -1,0 +1,138 @@
+/* About / Core Focus: scoped to avoid changing Toha's other sections. */
+.portfolio-about {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.portfolio-about__row {
+  align-items: center;
+  row-gap: 2.5rem;
+}
+
+.portfolio-about__intro {
+  padding-right: clamp(1rem, 3vw, 3.25rem);
+}
+
+.portfolio-about__name {
+  font-size: clamp(1.7rem, 2.5vw, 2.25rem);
+  font-weight: 650;
+  margin: 0 0 1.25rem;
+  letter-spacing: -.025em;
+}
+
+.portfolio-about__summary {
+  font-size: 1rem;
+  line-height: 1.82;
+  text-align: left; /* better for long technical prose than justified text */
+}
+
+.portfolio-about__summary p {
+  margin: 0 0 1rem;
+}
+
+.portfolio-about__social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+.portfolio-about__social a {
+  color: inherit;
+  font-size: 1.45rem;
+  opacity: .82;
+  transition: color .15s ease, opacity .15s ease;
+}
+.portfolio-about__social a:hover,
+.portfolio-about__social a:focus-visible {
+  color: #17a8d2;
+  opacity: 1;
+}
+
+.portfolio-about__resume {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .7rem 1rem;
+  border-radius: .5rem;
+  background: #0891b2;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 650;
+  transition: background .15s ease, transform .15s ease;
+}
+.portfolio-about__resume:hover,
+.portfolio-about__resume:focus-visible {
+  background: #0e7490;
+  transform: translateY(-1px);
+}
+
+.portfolio-about__focus-heading { margin-bottom: 1.15rem; }
+.portfolio-about__focus-heading h3 {
+  margin: 0 0 .35rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.portfolio-about__focus-heading p {
+  margin: 0;
+  font-size: .92rem;
+  opacity: .77;
+}
+.portfolio-about__focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .9rem;
+}
+.portfolio-about__focus-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.15rem;
+  border-radius: .9rem;
+  border: 1px solid rgba(79, 143, 189, .36);
+  background: rgba(73, 119, 167, .09);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .045);
+  min-height: 176px;
+}
+.portfolio-about__focus-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: .65rem;
+  background: rgba(14, 165, 193, .15);
+  color: #0ea5c1;
+  margin-bottom: .8rem;
+}
+.portfolio-about__focus-card h4 {
+  font-size: 1.04rem;
+  line-height: 1.35;
+  font-weight: 700;
+  margin: 0 0 .45rem;
+}
+.portfolio-about__focus-card p {
+  font-size: .87rem;
+  line-height: 1.55;
+  margin: 0;
+  opacity: .86;
+}
+.portfolio-about__tag {
+  display: inline-block;
+  margin-top: .75rem;
+  font-size: .76rem;
+  padding: .22rem .56rem;
+  border-radius: 999px;
+  color: #0e7490;
+  border: 1px solid rgba(14, 165, 193, .45);
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-about { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .portfolio-about__intro { padding-right: 15px; }
+}
+@media (max-width: 430px) {
+  .portfolio-about__focus-grid { grid-template-columns: 1fr; }
+  .portfolio-about__focus-card { min-height: auto; }
+}

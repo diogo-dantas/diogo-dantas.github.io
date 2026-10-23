@@ -1,67 +1,46 @@
-# section information
 section:
-  name: Educação
+  name: Formação Acadêmica
   id: education
-  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  template: sections/education.html
   enable: true
   weight: 4
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true fa-microscope
 
 degrees:
-- name: Licenciatura em Matemática
-  icon: fa-graduation-cap
-  timeframe: 2022-2026
-  institution:
-    name: Univesp - Univesidade Virtual do Estado de São Paulo
-    url: "https://univesp.br/"
-    logo: /images/sections/education/Univesp.png
-  takenCourses: 
-    courses:
-    - name: "Estatística, Geometria Analítica e Álgebra Linear, Lógica e Matemática Discreta, Disciplinas de Cálculo, Física, Geral, entre outros."
+  - name: "Licenciatura em Matemática — Concluída"
+    icon: fa-graduation-cap
+    timeframe: "2022–2026"
+    institution:
+      name: "UNIVESP — Universidade Virtual do Estado de São Paulo"
+      url: "https://univesp.br/"
+      logo: /images/sections/education/Univesp.png
+    takenCourses:
+      courses:
+        - name: "Estatística, geometria analítica e álgebra linear."
+        - name: "Cálculo, lógica e matemática discreta."
+        - name: "Raciocínio matemático e métodos quantitativos."
 
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/tech_college.png
-  #grade: #(optional)
-    scale: CGPA
-    achieved: 3.6
-    outOf: 4
-  #publications: #(optional)
-  #- title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  # url: "#"
-- name: Análise e Desenvolvimento de Sistemas
-  icon: fa-graduation-cap
-  timeframe: 2017-2019
-  institution:
-    name: Unip - Universidade Paulista
-    url: "https://unip.br/"
-    logo: /images/sections/education/unip.png
-  takenCourses: 
-    courses:
-    - name: "Algoritmos e Estrutura de Dados, Cloud Computing e Devops, Desenvolvimento Móvel, Engenharia de Software Ágil Aplicada, Análise de Sistemas Orientados a Objetos, Programação de Bases de Dados, Matemática e Estatística, Modelagem de Bancos de Dados NOSQL, entre outros."
+  - name: "Pós-graduação Lato Sensu em Ciência de Dados"
+    icon: fa-university
+    timeframe: "2020–2021"
+    institution:
+      name: "Universidade Presbiteriana Mackenzie"
+      url: "https://www.mackenzie.br/"
+      logo: /images/sections/education/mackenzie.png
+    takenCourses:
+      courses:
+        - name: "Arquitetura, coleta, armazenamento e processamento de Big Data."
+        - name: "Análise estatística, mineração e visualização de dados."
 
-- name: Especialização Lato Sensu - Ciência de Dados
-  icon: fa-university
-  timeframe: 2020-2021
-  institution:
-    name: Universidade Presbiteriana Mackenzie
-    url: "https://www.mackenzie.br/"
-    logo: /images/sections/education/mackenzie.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/science_college.png
-  takenCourses: 
-    courses:
-    - name: "Arquitetura de Big Data, Coleta e Armazenamento de Dados, Processamento em Big Data, Análise Estatística, Visualização de Dados, Mineração e Análises de Dados."
-
-- name: Bacharelado em Ciências Contábeis
-  icon: fa-graduation-cap
-  timeframe: 2012-2015
-  institution:
-    name: Universidade Anhanguera São Paulo
-    url: "https://www.anhanguera.com/"
-    logo: /images/sections/education/anhanguera.png
-  takenCourses: 
-    courses:
-    - name: "Análise de custo, Matemática Financeira, Planejamento Financeiro e Orçamentário, Contabilidade de Custos e Industrial, Contabilidade Fiscal e Planejamento Tributário, Capital de Giro e Análise Financeira, entre outros. Matrícula trancada no 3° ano."
-    
+  - name: "Análise e Desenvolvimento de Sistemas"
+    icon: fa-graduation-cap
+    timeframe: "2017–2019"
+    institution:
+      name: "Universidade Paulista (UNIP)"
+      url: "https://www.unip.br/"
+      logo: /images/sections/education/unip.png
+    takenCourses:
+      courses:
+        - name: "Algoritmos, estruturas de dados e análise de sistemas orientada a objetos."
+        - name: "Programação de bancos de dados, modelagem NoSQL e fundamentos de cloud/DevOps."
+        - name: "Engenharia de software, matemática e estatística."
