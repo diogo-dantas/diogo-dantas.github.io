@@ -7,7 +7,7 @@ section:
   showOnNavbar: true
 
 degrees:
-  - name: "Mathematics Degree (Brazilian Teaching Licensure) — Completed"
+  - name: "Mathematics Degree (Brazilian Teaching Licensure)"
     icon: fa-graduation-cap
     timeframe: "2022–2026"
     institution:

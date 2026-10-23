@@ -7,7 +7,7 @@ section:
   showOnNavbar: true
 
 degrees:
-  - name: "Licenciatura em Matemática — Concluída"
+  - name: "Licenciatura em Matemática"
     icon: fa-graduation-cap
     timeframe: "2022–2026"
     institution:
