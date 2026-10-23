@@ -1,9 +1,9 @@
 # Curated project cards. Long-form case studies remain in content/posts/.
 section:
-  name: Featured Projects
+  name: Projects
   id: projects
   enable: true
-  weight: 7
+  weight: 3
   showOnNavbar: true
   template: sections/projects.html
 

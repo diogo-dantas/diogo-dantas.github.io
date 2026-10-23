@@ -3,7 +3,7 @@ section:
   id: recent-posts
   enable: true
   weight: 8
-  showOnNavbar: true
+  showOnNavbar: false
 
 # Posts continuam sendo a fonte dos artigos e estudos de caso completos.
 numShow: 3

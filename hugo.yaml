@@ -12,6 +12,10 @@ module:
   mounts:
   - source: static/files
     target: static/files
+  
+  - source: static/js
+    target: static/js
+    
   - source: ./node_modules/flag-icon-css/flags
     target: static/flags
   - source: ./node_modules/@fontsource/mulish/files
@@ -74,8 +78,7 @@ params:
 
   # Configure the number of section title visible in the top navbar
   topNavbar:
-    maxVisibleSections: 3
-
+    maxVisibleSections: 4
   # Configure various features of this theme
   features:
     # [Deprecated] Enable dark theme

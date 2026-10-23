@@ -3,7 +3,7 @@ section:
   id: recent-posts
   enable: true
   weight: 8
-  showOnNavbar: true
+  showOnNavbar: false
 
 # Posts remain the source of long-form articles and project case studies.
 numShow: 3

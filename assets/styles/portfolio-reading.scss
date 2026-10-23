@@ -1,0 +1,154 @@
+/* DiogoDATA — Article reading layout v4. No global navbar or home changes. */
+.dd-reading-page {
+  --dd-reader-accent: #12a7c8;
+}
+
+/* Inline tools near the first article section. No fixed bottom bar. */
+.dd-reading-page .dd-reading-toolbar {
+  position: sticky;
+  top: 3.8rem;
+  z-index: 40;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .4rem;
+  width: 100%;
+  margin: 0 auto 1.25rem;
+  padding: .45rem .15rem;
+  border-bottom: 1px solid rgba(163, 186, 217, .18);
+  background: #1e293b;
+  box-sizing: border-box;
+}
+.dd-reading-page .dd-reading-toolbar__button {
+  border: 1px solid rgba(161, 181, 210, .38);
+  border-radius: .45rem;
+  color: #e6eefb;
+  padding: .35rem .7rem;
+  min-height: 36px;
+  background: transparent;
+  font: inherit;
+  font-size: .79rem;
+  line-height: 1.35;
+  cursor: pointer;
+}
+.dd-reading-page .dd-reading-toolbar__button:hover,
+.dd-reading-page .dd-reading-toolbar__button[aria-pressed='true'] {
+  border-color: #16b6d8;
+  background: rgba(18, 167, 200, .16);
+}
+.dd-reading-page .dd-reading-toolbar__button:focus-visible,
+.dd-reading-page .dd-reading-panel__close:focus-visible {
+  outline: 2px solid #73d9f0;
+  outline-offset: 3px;
+}
+.dd-reading-page [data-dd-reading-panel][hidden] { display: none !important; }
+
+/* Expand the real central column when one or both sidebars are closed. */
+.dd-reading-page.dd-reading-expanded [data-dd-reading-main] {
+  flex-grow: 1 !important;
+  flex-shrink: 1 !important;
+  flex-basis: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Focus on readable line length rather than stretching paragraphs edge to edge. */
+.dd-reading-page.dd-reading-focus [data-dd-reading-inner-col] {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.dd-reading-page.dd-reading-focus [data-dd-reading-prose] {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 840px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+.dd-reading-page [data-dd-reading-prose] p,
+.dd-reading-page [data-dd-reading-prose] li {
+  line-height: 1.72;
+  overflow-wrap: break-word;
+}
+.dd-reading-page [data-dd-reading-prose] h2,
+.dd-reading-page [data-dd-reading-prose] h3 {
+  scroll-margin-top: 7rem;
+}
+.dd-reading-page [data-dd-reading-main] img,
+.dd-reading-page [data-dd-reading-main] video,
+.dd-reading-page [data-dd-reading-main] iframe {
+  max-width: 100%;
+  height: auto;
+}
+.dd-reading-page [data-dd-reading-main] pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.dd-reading-page .dd-reading-panel__close,
+.dd-reading-page .dd-reading-backdrop { display: none; }
+
+/* Sidebar drawers at mobile and tablet widths. */
+@media (max-width: 991px) {
+  .dd-reading-page [data-dd-reading-panel] {
+    position: fixed !important;
+    top: 3.5rem !important;
+    bottom: 0 !important;
+    height: auto !important;
+    width: 88vw !important;
+    max-width: 340px !important;
+    z-index: 1090 !important;
+    overflow-y: auto !important;
+    padding: 1rem .8rem !important;
+    background: #1e293b !important;
+    box-shadow: 0 14px 32px rgba(0,0,0,.4);
+  }
+  .dd-reading-page [data-dd-reading-panel]:not([hidden]) { display: block !important; }
+  .dd-reading-page [data-dd-reading-panel='left'] { left: 0 !important; right: auto !important; }
+  .dd-reading-page [data-dd-reading-panel='right'] { right: 0 !important; left: auto !important; }
+  .dd-reading-page .dd-reading-panel__close {
+    display: block;
+    width: 100%;
+    padding: .6rem;
+    margin-bottom: .8rem;
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: .4rem;
+    color: #fff;
+    text-align: right;
+    background: rgba(0,0,0,.15);
+  }
+  .dd-reading-page.dd-reading-drawer-open .dd-reading-backdrop {
+    display: block;
+    position: fixed;
+    inset: 3.5rem 0 0;
+    background: rgba(0,0,0,.55);
+    z-index: 1080;
+  }
+  .dd-reading-page [data-dd-reading-main] {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .dd-reading-page .dd-reading-toolbar {
+    top: 3.45rem;
+    justify-content: center;
+  }
+  .dd-reading-page .dd-reading-toolbar__button {
+    font-size: .74rem;
+    padding: .4rem .55rem;
+  }
+  .dd-reading-page [data-dd-reading-prose] {
+    max-width: 100% !important;
+    padding-inline: 14px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dd-reading-page [data-dd-reading-panel] { transition: none !important; }
+}

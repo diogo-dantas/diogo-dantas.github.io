@@ -1,9 +1,9 @@
 # Vitrine selecionada de projetos. Os estudos de caso permanecem em content/posts/.
 section:
-  name: Projetos em Destaque
+  name: Projetos
   id: projects
   enable: true
-  weight: 7
+  weight: 3
   showOnNavbar: true
   template: sections/projects.html
 
